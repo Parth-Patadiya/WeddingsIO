@@ -1,0 +1,16 @@
+.carousel-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item {
+    flex: 0 0 33.333%; /* Show 3 items at a time */
+    padding: 1rem;
+  }
+  
