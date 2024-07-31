@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { HeroButtonImg, HeroSlider } from '../common/commonImport';
+import HeroPopUp from './HeroPopUp';
 
 const HeroSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [open, setOpen] = useState();
 
   const images = [
     HeroSlider,
@@ -19,6 +21,10 @@ const HeroSection = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const handleClick = () =>{ 
+    setOpen(true)
+  }
+
   return (
     <div className="relative w-full h-screen">
       <div
@@ -31,11 +37,11 @@ const HeroSection = () => {
           <p className="mt-4 text-xl">
             Introducing weddings.io. The AI-powered wedding planner for a stress-free, organized and unforgettable wedding.
           </p>
-          <div className="relative w-full mt-7">
+          <div className="relative w-full mt-7 hidden sm:block">
             <input type="text" className="pl-5 w-fill-available pr-20 py-2 border placeholder-white text-white rounded-full bg-black bg-opacity-30 focus:outline-none sm:pr-28 md:pr-32 lg:pr-40 border-gray-400" placeholder="Generate Your Wedding Plan" />
-            <button className="flex h-8 absolute right-0 top-1/2 transform -translate-y-1/2 mr-2 pr-4 pl-0.5 pt-1 rounded-full bg-yellow-500 text-light-500 border hover:bg-yellow-500 hover:text-white focus:outline-none border-light text-sm">
-              <img className='w-4  bg-transparent' src={HeroButtonImg}/>
-                Generate
+            <button className="flex h-8 absolute right-0 top-1/2 transform -translate-y-1/2 mr-2 pr-4 pl-0.5 pt-1 rounded-full bg-yellow-500 text-light-500 border hover:bg-yellow-500 hover:text-white focus:outline-none border-light text-sm" onClick={handleClick}>
+              <img className='w-4 mr-2 mt-0.5 ml-2 bg-transparent' src={HeroButtonImg} />
+              Generate
             </button>
           </div>
           <p className="mt-4 text-sm">No personal credit checks or founder guarantee.</p>
@@ -51,6 +57,7 @@ const HeroSection = () => {
           />
         ))}
       </div>
+      {open && <HeroPopUp open={open} />}
     </div>
   );
 };
