@@ -2,6 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&display=swap');
 
 .App {
   text-align: center;
@@ -10,6 +11,9 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+body {
+  @apply font-sans;
 }
 
 @media (prefers-reduced-motion: no-preference) {

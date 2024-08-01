@@ -12,6 +12,12 @@ module.exports = {
       width: {
         'fill-available': '-webkit-fill-available',
       },
+      borderRadius: {
+        'custom': '1rem',
+      },
+      fontFamily: {
+        sans: ['Inter Tight', 'sans-serif'],
+      },
     },
   },
   plugins: [],

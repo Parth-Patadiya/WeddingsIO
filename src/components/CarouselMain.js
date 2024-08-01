@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { HeroButtonImg, HeroSlider } from '../common/commonImport';
 import HeroPopUp from './HeroPopUp';
 
-const HeroSection = () => {
+const CarouselMain = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [open, setOpen] = useState();
 
@@ -16,12 +16,12 @@ const HeroSection = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000); // Change image every 5 seconds
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
 
-  const handleClick = () =>{ 
+  const handleClick = () => {
     setOpen(true)
   }
 
@@ -57,9 +57,9 @@ const HeroSection = () => {
           />
         ))}
       </div>
-      {open && <HeroPopUp open={open} />}
+      {/* {open && <HeroPopUp open={open} />} */}
     </div>
   );
 };
 
-export default HeroSection;
+export default CarouselMain;
