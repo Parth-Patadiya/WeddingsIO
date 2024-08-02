@@ -5,6 +5,10 @@ import LogoCarousel from '../components/LogoCarousel';
 import FeedBackCarousel from '../components/FeedBackCarousel';
 import WhyWeddingsIo from '../components/WhyWeddingsIo';
 import PlanWithEase from '../components/PlanWithEase';
+import MakingWedding from '../components/MakingWedding';
+import TestimonialCarousel from '../components/TestimonialCarousel';
+import HaveAQuestion from '../components/HaveAQuestion';
+import FollowUs from '../components/FollowUs';
 
 const HomeScreen = () => {
   return (
@@ -15,8 +19,10 @@ const HomeScreen = () => {
       <FeedBackCarousel />
       <WhyWeddingsIo />
       <PlanWithEase />
-      <WhyWeddingsIo />
-
+      <MakingWedding />
+      <TestimonialCarousel />
+      <HaveAQuestion />
+      <FollowUs />
     </div>
   )
 }

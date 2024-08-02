@@ -1,6 +1,6 @@
 import React from 'react';
 import { ReactComponent as Icon } from '../assets/Images/Stars.svg';
-import { Bottom1, FirstBack, SecondFront } from '../common/commonImport';
+import { Bottom1, Bottom2, FirstBack, SecondFront } from '../common/commonImport';
 
 const PlanWithEase = () => {
   return (
@@ -17,7 +17,7 @@ const PlanWithEase = () => {
           platform. Enjoy a stress-free and delightful planning journey!
         </div>
         <div className='flex w-full bg-gray-100 rounded-xl'>
-          <div className='flex flex-col w-[40%] sm:w-full justify-center text-start m-10'>
+          <div className='flex flex-col w-full md:w-[40%] justify-center text-start m-10'>
             <div className='font-bold text-xl w-full mb-4'>
               AI Wedding Planner
             </div>
@@ -36,7 +36,7 @@ const PlanWithEase = () => {
           </div>
         </div>
       </div>
-      <div className='w-[80%] flex justify-between'>
+      <div className='w-[80%] h-[80%] flex justify-between'>
         <div className='w-[49.5%] mt-2 bg-gray-100 rounded-xl flex flex-col justify-start pt-5 px-10'>
           <div className="font-bold text-xl text-start mb-4">
             AI Vendor Matchmaking
@@ -54,7 +54,7 @@ const PlanWithEase = () => {
               <div className='text-sm text-start leading-normal' >10:00 AM - 13:00 AM</div>
             </div>
           </div>
-          <img className='mt-3' src={Bottom1} />
+          <img className='mt-3 h-full' src={Bottom1} />
         </div>
         <div className='w-[49.5%] mt-2 bg-gray-100 rounded-xl flex flex-col justify-start pt-5 px-10'>
           <div className="font-bold text-xl text-start mb-4">
@@ -73,7 +73,7 @@ const PlanWithEase = () => {
               <div className='text-sm text-start leading-normal' >10:00 AM - 13:00 AM</div>
             </div>
           </div>
-          <img className='mt-3' src={Bottom1} />
+          <img className='mt-3 h-full' src={Bottom2} />
         </div>
       </div>
     </div>
