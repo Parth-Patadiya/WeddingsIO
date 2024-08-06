@@ -24,7 +24,7 @@ const PlanWithEase = () => {
             <div className='text-gray-400'>
               Develop your wedding vision in realtime with our AI wedding planner. Get custom vendor suggestions, scheduling, task management and details specific to your wedding vision.
             </div>
-            <div className='flex h-15 w-full pt-10 justify-start align-middle'>
+            <div className='flex h-15 w-full pt-10 justify-center sm:justify-start align-middle'>
               <button className="flex right-0 p-3 px-10 rounded-full bg-light text-light-500 border hover:bg-yellow-500 text-white font-semibold focus:outline-none border-light text-sm">
                 Schedule a Demo
               </button>

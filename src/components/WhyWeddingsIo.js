@@ -13,8 +13,8 @@ const WhyWeddingsIo = () => {
         <div className="text-sm text-gray-500 mb-10">
           Explore real weddings, real couples and see what our our customized tools can do for you.
         </div>
-        <div className='flex w-full justify-between'>
-          <div className='w-[32.5%] p-3 border border-1 border-gray-200 rounded-lg'>
+        <div className='flex w-full flex-col sm:flex-row  justify-between'>
+          <div className='sm:w-[32.5%] mb-3 sm:mb-0 w-full p-3 border border-1 border-gray-200 rounded-lg'>
             <img src={Ww1} className='w-full' />
             <div className='flex justify-between'>
               <div className='w-[30%] pt-3  rounded-lg'>
@@ -27,74 +27,74 @@ const WhyWeddingsIo = () => {
                 <img src={Ww2} className='w-full' />
               </div>
             </div>
-            <div className='flex w-full mt-4 flex-col sm:flex-row '>
-              <div className='w-full sm:w-[70%] flex flex-col sm:flex-row'>
-                <div className='flex justify-start text-start sm:text-center'>
+            <div className='flex w-full mt-4'>
+              <div className='w-[70%]'>
+                <div className='flex justify-start'>
                   Angelina & James
                 </div>
                 <div className='flex justify-start text-xs text-gray-400'>
                   Toronto, Ontario
                 </div>
               </div>
-              <div className='w-full sm:w-[30%]'>
+              <div className='w-[30%]'>
                 <div className='flex justify-start text-xs mt-2 text-gray-400'>
                   45 Photos
                 </div>
               </div>
             </div>
           </div>
-          <div className='w-[32.5%] p-3 border border-1 border-gray-200 rounded-lg'>
+          <div className='sm:w-[32.5%] mb-3 sm:mb-0 w-full p-3 border border-1 border-gray-200 rounded-lg'>
             <img src={Ww1} className='w-full' />
             <div className='flex justify-between'>
               <div className='w-[30%] pt-3  rounded-lg'>
                 <img src={Ww2} className='w-full' />
               </div>
               <div className='w-[30%] pt-3  rounded-lg'>
-                <img src={Ww2} className='w-full' />
+                <img src={Ww3} className='w-full' />
               </div>
               <div className='w-[30%] pt-3  rounded-lg'>
-                <img src={Ww2} className='w-full' />
+                <img src={Ww4} className='w-full' />
               </div>
             </div>
-            <div className='flex w-full mt-4 flex-col sm:flex-row '>
-              <div className='w-full sm:w-[70%] flex flex-col sm:flex-row'>
-                <div className='flex justify-start text-start sm:text-center'>
+            <div className='flex w-full mt-4'>
+              <div className='w-[70%]'>
+                <div className='flex justify-start'>
                   Angelina & James
                 </div>
                 <div className='flex justify-start text-xs text-gray-400'>
                   Toronto, Ontario
                 </div>
               </div>
-              <div className='w-full sm:w-[30%]'>
+              <div className='w-[30%]'>
                 <div className='flex justify-start text-xs mt-2 text-gray-400'>
                   45 Photos
                 </div>
               </div>
             </div>
           </div>
-          <div className='w-[32.5%] p-3 border border-1 border-gray-200 rounded-lg'>
+          <div className='sm:w-[32.5%] mb-3 sm:mb-0 w-full p-3 border border-1 border-gray-200 rounded-lg'>
             <img src={Ww1} className='w-full' />
             <div className='flex justify-between'>
               <div className='w-[30%] pt-3  rounded-lg'>
                 <img src={Ww2} className='w-full' />
               </div>
               <div className='w-[30%] pt-3  rounded-lg'>
-                <img src={Ww2} className='w-full' />
+                <img src={Ww3} className='w-full' />
               </div>
               <div className='w-[30%] pt-3  rounded-lg'>
-                <img src={Ww2} className='w-full' />
+                <img src={Ww4} className='w-full' />
               </div>
             </div>
-            <div className='flex w-full mt-4 flex-col sm:flex-row '>
-              <div className='w-full sm:w-[70%] flex flex-col sm:flex-row'>
-                <div className='flex justify-start text-start sm:text-center'>
+            <div className='flex w-full mt-4'>
+              <div className='w-[70%]'>
+                <div className='flex justify-start'>
                   Angelina & James
                 </div>
                 <div className='flex justify-start text-xs text-gray-400'>
                   Toronto, Ontario
                 </div>
               </div>
-              <div className='w-full sm:w-[30%]'>
+              <div className='w-[30%]'>
                 <div className='flex justify-start text-xs mt-2 text-gray-400'>
                   45 Photos
                 </div>

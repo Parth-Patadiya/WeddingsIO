@@ -14,7 +14,7 @@ const FollowUs = () => {
           Stay connected with us for the latest wedding trends, inspiration, and tips! Follow Wedding.io on Facebook, Instagram, and Twitter to join our community of happy couples and industry experts.
         </div>
 
-        <div className='w-[70%] items-center justify-center my-10 flex  sm:justify-between md:flex-row lg:flex-row'>
+        <div className='sm:w-[70%] w-full items-center justify-between my-10 flex  sm:justify-between md:flex-row lg:flex-row'>
          <img className='w-12' src={Instagram} />
          <img className='w-12' src={Facebook} />
          <img className='w-12' src={Tiktok} />
