@@ -5,7 +5,7 @@ import { Mail, Phone, Ww1, Ww2, Ww3, Ww4 } from '../common/commonImport';
 const HaveAQuestion = () => {
   return (
     <div className='flex align-middle flex-col items-center justify-center mt-4 h-full bg-gray-100'>
-      <div className='w-[40%] flex align-middle flex-col items-center justify-center'>
+      <div className='sm:w-[40%] w-[75%] flex align-middle flex-col items-center justify-center'>
         <Icon className='w-24 h-7 mb-2.5 mt-10' />
         <h1 className="text-2xl md:text-4xl font-semibold my-4">
           Have a question?
@@ -16,7 +16,7 @@ const HaveAQuestion = () => {
         <div className="text-sm text-gray-500 mb-7">
           support, or just want some advice, we're here for you.
         </div>
-        <div className='w-[60%] justify-between flex flex-col sm:flex-col md:flex-col lg:flex-row'>
+        <div className='w-[60%] items-center justify-between flex flex-col sm:flex-col md:flex-col lg:flex-row'>
           <div className='flex justify-start w-fit'>
             <img className='w-5 mr-2' src={Mail} />
             <div className='text-xs'>support@wedding.io</div>

@@ -33,8 +33,8 @@ const VideoCarousel = () => {
         and how we are changing the wedding industry.
         </div>
       <div className="relative w-full overflow-hidden mt-11 h-80">
-        <div className="absolute z-10 inset-y-0 left-0 w-[400px] bg-gradient-to-r from-white via-transparent to-transparent pointer-events-none"></div>
-        <div className="absolute z-10 inset-y-0 right-0 w-[400px] bg-gradient-to-l from-white via-transparent to-transparent pointer-events-none"></div>
+        <div className="hidden sm:block absolute z-10 inset-y-0 left-0 w-[400px] bg-gradient-to-r from-white via-transparent to-transparent pointer-events-none"></div>
+        <div className="absolute hidden sm:block  z-10 inset-y-0 right-0 w-[400px] bg-gradient-to-l from-white via-transparent to-transparent pointer-events-none"></div>
         <div className="flex justify-center items-center h-full">
           <div className="flex w-2/3 transition-transform duration-500 h-full ease-in-out" style={{ transform: `translateX(-${(currentIndex * 100) / 3}%)` }}>
             {slides.map((slide, index) => (

@@ -27,16 +27,16 @@ const WhyWeddingsIo = () => {
                 <img src={Ww2} className='w-full' />
               </div>
             </div>
-            <div className='flex w-full mt-4'>
-              <div className='w-[70%]'>
-                <div className='flex justify-start'>
+            <div className='flex w-full mt-4 flex-col sm:flex-row '>
+              <div className='w-full sm:w-[70%] flex flex-col sm:flex-row'>
+                <div className='flex justify-start text-start sm:text-center'>
                   Angelina & James
                 </div>
                 <div className='flex justify-start text-xs text-gray-400'>
                   Toronto, Ontario
                 </div>
               </div>
-              <div className='w-[30%]'>
+              <div className='w-full sm:w-[30%]'>
                 <div className='flex justify-start text-xs mt-2 text-gray-400'>
                   45 Photos
                 </div>
@@ -50,22 +50,22 @@ const WhyWeddingsIo = () => {
                 <img src={Ww2} className='w-full' />
               </div>
               <div className='w-[30%] pt-3  rounded-lg'>
-                <img src={Ww3} className='w-full' />
+                <img src={Ww2} className='w-full' />
               </div>
               <div className='w-[30%] pt-3  rounded-lg'>
-                <img src={Ww4} className='w-full' />
+                <img src={Ww2} className='w-full' />
               </div>
             </div>
-            <div className='flex w-full mt-4'>
-              <div className='w-[70%]'>
-                <div className='flex justify-start'>
+            <div className='flex w-full mt-4 flex-col sm:flex-row '>
+              <div className='w-full sm:w-[70%] flex flex-col sm:flex-row'>
+                <div className='flex justify-start text-start sm:text-center'>
                   Angelina & James
                 </div>
                 <div className='flex justify-start text-xs text-gray-400'>
                   Toronto, Ontario
                 </div>
               </div>
-              <div className='w-[30%]'>
+              <div className='w-full sm:w-[30%]'>
                 <div className='flex justify-start text-xs mt-2 text-gray-400'>
                   45 Photos
                 </div>
@@ -79,22 +79,22 @@ const WhyWeddingsIo = () => {
                 <img src={Ww2} className='w-full' />
               </div>
               <div className='w-[30%] pt-3  rounded-lg'>
-                <img src={Ww3} className='w-full' />
+                <img src={Ww2} className='w-full' />
               </div>
               <div className='w-[30%] pt-3  rounded-lg'>
-                <img src={Ww4} className='w-full' />
+                <img src={Ww2} className='w-full' />
               </div>
             </div>
-            <div className='flex w-full mt-4'>
-              <div className='w-[70%]'>
-                <div className='flex justify-start'>
+            <div className='flex w-full mt-4 flex-col sm:flex-row '>
+              <div className='w-full sm:w-[70%] flex flex-col sm:flex-row'>
+                <div className='flex justify-start text-start sm:text-center'>
                   Angelina & James
                 </div>
                 <div className='flex justify-start text-xs text-gray-400'>
                   Toronto, Ontario
                 </div>
               </div>
-              <div className='w-[30%]'>
+              <div className='w-full sm:w-[30%]'>
                 <div className='flex justify-start text-xs mt-2 text-gray-400'>
                   45 Photos
                 </div>

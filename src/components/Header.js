@@ -92,7 +92,7 @@ const Header = () => {
                             <span className="sr-only">Your Company</span>
                             <img
                                 alt=""
-                                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                                src={HomeLogo}
                                 className="h-8 w-auto"
                             />
                         </a>
@@ -137,6 +137,12 @@ const Header = () => {
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                                 >
                                     Contact Us
+                                </a>
+                                <a
+                                    href="#"
+                                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                                >
+                                    Are You a Vendor?
                                 </a>
                             </div>
                             <div className="py-6">

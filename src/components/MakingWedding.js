@@ -21,9 +21,9 @@ const MakingWedding = () => {
           memorable wedding celebration.
         </div>
       </div>
-      <div className='w-full md:w-[60%] flex flex-col sm:flex-col md:flex-col lg:flex-row justify-between'>
-        <div className='w-full md:w-[48.5%] p-8 border border-gray-200 rounded-2xl flex flex-col justify-start'>
-          <img className='w-[20%]' src={MakingW1} />
+      <div className='w-full md:w-[60%] flex flex-col sm:flex-col md:flex-col lg:flex-row justify-between md:items-center items-center'>
+        <div className='w-[93%] sm:w-full mb-4 sm:mb-3 md:w-[48.5%] p-8 border border-gray-200 rounded-2xl flex flex-col justify-start'>
+          <img className='w-[20%] sm:w-[15%]' src={MakingW1} />
           <div className="font-bold text-xl rounded-lg text-start mb-4 mt-8">
             Enhanced Experience
           </div>
@@ -34,8 +34,8 @@ const MakingWedding = () => {
             stay creative, fun and focus on your vision.
           </div>
         </div>
-        <div className='w-full md:w-[48.5%] p-8 border border-gray-200 rounded-2xl flex flex-col justify-start'>
-          <img className='w-[20%]' src={MakingW2} />
+        <div className='w-[93%] sm:w-full md:w-[48.5%] p-8 border border-gray-200 rounded-2xl flex flex-col justify-start'>
+          <img className='w-[20%] sm:w-[15%]' src={MakingW2} />
           <div className="font-bold text-xl rounded-lg text-start mb-4 mt-8">
             Stress-Free Planning
           </div>
@@ -44,9 +44,9 @@ const MakingWedding = () => {
           </div>
         </div>
       </div>
-      <div className='w-full md:w-[60%] mt-6 flex flex-col sm:flex-col md:flex-col lg:flex-row justify-between'>
-        <div className='w-full md:w-[48.5%] p-8 border border-gray-200 rounded-2xl flex flex-col justify-start'>
-          <img className='w-[20%]' src={MakingW3} />
+      <div className='w-full md:w-[60%] mt-6 flex flex-col sm:flex-col md:flex-col lg:flex-row justify-between md:items-center items-center'>
+        <div className='w-[93%] sm:w-full mb-4  md:w-[48.5%] p-8 border border-gray-200 rounded-2xl flex flex-col justify-start'>
+          <img className='w-[20%] sm:w-[15%]' src={MakingW3} />
           <div className="font-bold text-xl rounded-lg text-start mb-4 mt-8">
             Save-time
           </div>
@@ -54,8 +54,8 @@ const MakingWedding = () => {
             The average wedding takes 6-12 months to plan, with weddings.io, you can save up to 50% of your time.
           </div>
         </div>
-        <div className='w-full md:w-[48.5%] p-8 border border-gray-200 rounded-2xl flex flex-col justify-start'>
-          <img className='w-[20%]' src={MakingW4} />
+        <div className='w-[93%] sm:w-full  md:w-[48.5%] p-8 border border-gray-200 rounded-2xl flex flex-col justify-start'>
+          <img className='w-[20%] sm:w-[15%]' src={MakingW4} />
           <div className="font-bold text-xl rounded-lg text-start mb-4 mt-8">
             Collaborative Planning
           </div>

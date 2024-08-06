@@ -41,8 +41,8 @@ const LogoCarousel = () => {
 
     return (
         <div className="relative mt-10 mb-4 w-full overflow-hidden">
-            <div className="absolute z-10 inset-y-0 left-0 w-[500px] bg-gradient-to-r from-white via-transparent to-transparent pointer-events-none"></div>
-            <div className="absolute z-10 inset-y-0 right-0 w-[500px] bg-gradient-to-l from-white via-transparent to-transparent pointer-events-none"></div>
+            <div className="hidden sm:block absolute z-10 inset-y-0 left-0 w-[500px] bg-gradient-to-r from-white via-transparent to-transparent pointer-events-none"></div>
+            <div className="hidden sm:block absolute z-10 inset-y-0 right-0 w-[500px] bg-gradient-to-l from-white via-transparent to-transparent pointer-events-none"></div>
             <div ref={itemsRef} className="flex w-max">
                 {items.map((item) => (
                     <div key={item.id} className="min-w-1/3 p-4">

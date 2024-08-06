@@ -36,8 +36,8 @@ const PlanWithEase = () => {
           </div>
         </div>
       </div>
-      <div className='w-[80%] h-[80%] flex justify-between'>
-        <div className='w-[49.5%] mt-2 bg-gray-100 rounded-xl flex flex-col justify-start pt-5 px-10'>
+      <div className='w-[80%] h-[80%] flex flex-col sm:flex-row justify-between'>
+        <div className='w-full sm:w-[49.5%] mt-2 bg-gray-100 rounded-xl flex flex-col justify-start pt-5 px-10'>
           <div className="font-bold text-xl text-start mb-4">
             AI Vendor Matchmaking
           </div>
@@ -56,7 +56,7 @@ const PlanWithEase = () => {
           </div>
           <img className='mt-3 h-full' src={Bottom1} />
         </div>
-        <div className='w-[49.5%] mt-2 bg-gray-100 rounded-xl flex flex-col justify-start pt-5 px-10'>
+        <div className='w-full sm:w-[49.5%] mt-2 bg-gray-100 rounded-xl flex flex-col justify-start pt-5 px-10'>
           <div className="font-bold text-xl text-start mb-4">
             Plan with Ease
           </div>
