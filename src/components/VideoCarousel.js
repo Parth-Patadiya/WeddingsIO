@@ -49,8 +49,8 @@ const VideoCarousel = () => {
                 >
                   {index === currentIndex && <>
 
-                    <img className="absolute left-0 transform -translate-y-1/2 w-20 z-10 cursor-pointer" style={{ top: '54%' }} src={NextButton} onClick={handlePrev} />
-                    <img className="absolute right-0 transform -translate-y-1/2 w-20 z-10 rotate-180 cursor-pointer" style={{ top: '50%' }} src={NextButton} onClick={handleNext} />                </>
+                    <img className="absolute left-0 transform -translate-y-1/2 w-10 sm:w-20 z-10 cursor-pointer" style={{ top: '54%' }} src={NextButton} onClick={handlePrev} />
+                    <img className="absolute right-0 transform -translate-y-1/2 w-10 sm:w-20 z-10 rotate-180 cursor-pointer" style={{ top: '50%' }} src={NextButton} onClick={handleNext} />                </>
                   }
                   <div className="w-full h-full bg-gray-300 flex items-center justify-center rounded-custom p-2">
                     <img className="w-full h-full bg-black flex items-center justify-center rounded-custom " src={slide.content}/>
