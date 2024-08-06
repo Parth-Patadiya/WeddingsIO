@@ -10,7 +10,52 @@ import {
     XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { HomeLogo } from '../common/commonImport'
-import { NavLink } from 'react-router-dom'
+
+const [isModalOpen, setIsModalOpen] = useState(false);
+const SignupModal = ({ isOpen, onClose }) => {
+
+    if (!isOpen) return null;
+
+    return (
+      <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+        <div className="relative bg-white rounded-lg p-6 w-full max-w-md mx-auto">
+          <button
+            className="absolute top-3 right-3 text-gray-500 hover:text-gray-700"
+            onClick={onClose}
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" stroke="yellow-500" fill="#fff" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+          <h2 className="text-2xl font-bold mb-4">Sign Up</h2>
+          <h2 className="text-sm mb-4 text-gray-300">Sign Up for Subscribe to our Newsletter</h2>
+          <form>
+            <div className="mb-4">
+              <input className="w-[70%] px-3 py-2 border border-gray-200 rounded-md" placeholder='Enter Your Name Here' type="text" id="name" required />
+            </div>
+            <div className="mb-4">
+              <input className="w-[70%] px-3 py-2 border border-gray-200 rounded-md" placeholder='Enter Your Email Here' type="email" id="email" required />
+            </div>
+            <div className="mb-4">
+              <input className="w-[70%] px-3 py-2 border border-gray-200 rounded-md" placeholder='Enter Your Password Here' type="password" id="password" required />
+            </div>
+            <div className='w-full flex justify-center'>
+              <button className="flex px-10 py-2 rounded-full bg-yellow-500 text-light-500 border hover:bg-yellow-500 hover:text-white focus:outline-none border-light text-sm">Sign Up</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    );
+
+  };
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
 
 const Header = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -79,11 +124,12 @@ const Header = () => {
                     <button className="bg-light text-white font-bold py-1 px-3 w-28 rounded-full hover:bg-yellow-500 ">
                         Log In
                     </button>
-                    <button className="bg-light text-white font-bold py-1 px-3 w-28 rounded-full hover:bg-yellow-500">
+                    <button className="bg-light text-white font-bold py-1 px-3 w-28 rounded-full hover:bg-yellow-500" onClick={openModal}>
                         Sign Up
                     </button>
                 </div>
             </nav>
+            <SignupModal isOpen={isModalOpen} onClose={closeModal} />
             <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
                 <div className="fixed inset-0 z-10" />
                 <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
@@ -155,6 +201,7 @@ const Header = () => {
                                 <a
                                     href="#"
                                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                                    onClick={openModal}
                                 >
                                     Sign Up
                                 </a>
