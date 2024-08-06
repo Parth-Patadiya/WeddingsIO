@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { Dialog, DialogPanel, PopoverGroup } from "@headlessui/react";
+import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { HomeLogo } from "../common/commonImport";
 
@@ -8,39 +8,23 @@ const Header = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activePage, setActivePage] = useState("home");
-  const SignupModal = ({ isOpen, onClose }) => {
 
+  const SignupModal = ({ isOpen, onClose }) => {
     if (!isOpen) return null;
+
     return (
-      <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+      <Dialog open={isOpen} onClose={onClose} className="fixed inset-0 z-40 flex items-center justify-center bg-black bg-opacity-50">
         <div className="relative bg-white rounded-lg p-6 w-full max-w-md mx-auto">
           <button
             className="absolute top-3 right-3 text-gray-500 hover:text-gray-700"
             onClick={onClose}
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 text-yellow-500"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                stroke="yellow-500"
-                fill="#fff"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
+            <XMarkIcon className="h-6 w-6 text-yellow-500" aria-hidden="true" />
           </button>
-          <h2 className="text-2xl font-bold mb-4">Sign Up</h2>
-          <h2 className="text-sm mb-4 text-gray-300">
-            Sign Up for Subscribe to our Newsletter
-          </h2>
+          <h2 className="text-2xl font-bold mb-4 flex justify-center">Sign Up</h2>
+          <h2 className="text-sm mb-4 text-gray-300 flex justify-center">Sign Up for Subscribe to our Newsletter</h2>
           <form>
-            <div className="mb-4">
+            <div className="mb-4 flex justify-center">
               <input
                 className="w-[70%] px-3 py-2 border border-gray-200 rounded-md"
                 placeholder="Enter Your Name Here"
@@ -49,7 +33,7 @@ const Header = () => {
                 required
               />
             </div>
-            <div className="mb-4">
+            <div className="mb-4 flex justify-center">
               <input
                 className="w-[70%] px-3 py-2 border border-gray-200 rounded-md"
                 placeholder="Enter Your Email Here"
@@ -58,7 +42,7 @@ const Header = () => {
                 required
               />
             </div>
-            <div className="mb-4">
+            <div className="mb-4 flex justify-center">
               <input
                 className="w-[70%] px-3 py-2 border border-gray-200 rounded-md"
                 placeholder="Enter Your Password Here"
@@ -74,23 +58,21 @@ const Header = () => {
             </div>
           </form>
         </div>
-      </div>
+      </Dialog>
     );
   };
-  
+
   const openModal = () => {
     setIsModalOpen(true);
   };
-  
+
   const closeModal = () => {
     setIsModalOpen(false);
   };
+
   return (
-    <header className="bg-white px-13  shadow-md z-50">
-      <nav
-        aria-label="Global"
-        className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
-      >
+    <header className="bg-white px-13 shadow-md z-50">
+      <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
@@ -107,7 +89,7 @@ const Header = () => {
             <Bars3Icon aria-hidden="true" className="h-6 w-6" />
           </button>
         </div>
-        <PopoverGroup className="hidden lg:flex lg:gap-x-6 justify-end">
+        <div className="hidden lg:flex lg:gap-x-6 justify-end">
           <button
             className={`${
               activePage === "home"
@@ -158,7 +140,7 @@ const Header = () => {
           >
             Contact Us
           </button>
-        </PopoverGroup>
+        </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-5 flex items-center">
           <div className="text-sm font-semibold leading-6 ml-9 text-gray-600 w-44">
             Are You a Vendor?
@@ -175,13 +157,9 @@ const Header = () => {
         </div>
       </nav>
       <SignupModal isOpen={isModalOpen} onClose={closeModal} />
-      <Dialog
-        open={mobileMenuOpen}
-        onClose={setMobileMenuOpen}
-        className="lg:hidden"
-      >
-        <div className="fixed inset-0 z-10" />
-        <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+      <Dialog open={mobileMenuOpen} onClose={() => setMobileMenuOpen(false)} className="lg:hidden">
+        <div className="fixed inset-0 z-30 bg-black bg-opacity-50" />
+        <DialogPanel className="fixed inset-y-0 right-0 z-40 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
@@ -258,4 +236,5 @@ const Header = () => {
     </header>
   );
 };
+
 export default Header;
