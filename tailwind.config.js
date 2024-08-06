@@ -13,10 +13,10 @@ module.exports = {
         'fill-available': '-webkit-fill-available',
       },
       borderRadius: {
-        'custom': '1rem',
+        'custom': '2rem',
       },
       fontFamily: {
-        sans: ['Inter Tight', 'sans-serif'],
+        sans: ['Lora'],
       },
     },
   },

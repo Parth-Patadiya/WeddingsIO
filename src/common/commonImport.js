@@ -1,5 +1,8 @@
 export const HomeLogo = require('../assets/Images/Logos/LogoHome.png');
-export const HeroSlider = require('../assets/Images/HeroSlider/HeroSlider.jpg');
+export const HeroSlider1 = require('../assets/Images/HeroSlider/lp-banner-01.webp');
+export const HeroSlider2 = require('../assets/Images/HeroSlider/lp-banner-02.webp');
+export const HeroSlider3 = require('../assets/Images/HeroSlider/lp-banner-03.webp');
+export const HeroSlider4 = require('../assets/Images/HeroSlider/lp-banner-04.webp');
 export const HeroButtonImg = require('../assets/Images/HeroSlider/ButtonSlider.png');
 export const Aisle = require('../assets/Images/HeroSubSlider/aisle_planner_logo.png');
 export const BrideBook = require('../assets/Images/HeroSubSlider/bridebook_logo.png');
@@ -28,3 +31,7 @@ export const Facebook = require('../assets/Images/FollowUs/Facebook.png');
 export const Linkedin = require('../assets/Images/FollowUs/Linkedin.png');
 export const Tiktok = require('../assets/Images/FollowUs/Tiktok.png');
 export const YouTube = require('../assets/Images/FollowUs/Youtube.png');
+export const video1 = require('../assets/Images/Video/Frame 1000003937.png');
+export const video2 = require('../assets/Images/Video/Frame 1000003947.png');
+export const video3 = require('../assets/Images/Video/Frame 1000003948.png');
+export const video4 = require('../assets/Images/Video/Frame 1000003949.png');

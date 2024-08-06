@@ -57,7 +57,7 @@ const FeedBackCarousel = () => {
                       </svg>
                     ))}
                   </div>
-                  <p className="text-lg text-gray-700 mt-4">"{testimonial.text}"</p>
+                  <p className="text-2xl text-gray-700 mt-4 italic">"{testimonial.text}"</p>
                   <p className="text-lg text-gray-700 mt-4">{testimonial.name}</p>
                   <p className="text-lg text-gray-400 ">{testimonial.company}</p>
                 </div>

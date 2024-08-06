@@ -15,11 +15,11 @@ const FollowUs = () => {
         </div>
 
         <div className='sm:w-[70%] w-full items-center justify-between my-10 flex  sm:justify-between md:flex-row lg:flex-row'>
-         <img className='w-12' src={Instagram} />
-         <img className='w-12' src={Facebook} />
-         <img className='w-12' src={Tiktok} />
-         <img className='w-12' src={Linkedin} />
-         <img className='w-12' src={YouTube} />
+         <img className='w-16' src={Instagram} />
+         <img className='w-16' src={Facebook} />
+         <img className='w-16' src={Tiktok} />
+         <img className='w-16' src={Linkedin} />
+         <img className='w-16' src={YouTube} />
         </div>
       </div>
     </div>

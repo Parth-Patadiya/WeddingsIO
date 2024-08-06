@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
-import { Design, NextButton } from '../common/commonImport';
+import { Design, NextButton, video1, video2, video3, video4 } from '../common/commonImport';
 import { ReactComponent as Icon } from '../assets/Images/Stars.svg';
 
 const VideoCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const slides = [
-    { id: 1, content: 'https://www.w3schools.com/html/mov_bbb.mp4' },
-    { id: 2, content: 'https://www.w3schools.com/html/movie.mp4' },
-    { id: 3, content: 'https://www.w3schools.com/html/mov_bbb.mp4' },
-    { id: 4, content: 'https://www.w3schools.com/html/movie.mp4' },
-    { id: 5, content: 'https://www.w3schools.com/html/mov_bbb.mp4' }
+    { id: 1, content: video1 },
+    { id: 2, content: video2 },
+    { id: 3, content: video3 },
+    { id: 4, content: video4 },
+    // { id: 5, content: 'https://www.w3schools.com/html/mov_bbb.mp4' }
   ];
 
   const handleNext = () => {
@@ -32,7 +32,7 @@ const VideoCarousel = () => {
       <div className="text-sm text-gray-500">
         and how we are changing the wedding industry.
         </div>
-      <div className="relative w-full overflow-hidden mt-11 h-80">
+      <div className="relative w-full overflow-hidden mt-11 ">
         <div className="hidden sm:block absolute z-10 inset-y-0 left-0 w-[400px] bg-gradient-to-r from-white via-transparent to-transparent pointer-events-none"></div>
         <div className="absolute hidden sm:block  z-10 inset-y-0 right-0 w-[400px] bg-gradient-to-l from-white via-transparent to-transparent pointer-events-none"></div>
         <div className="flex justify-center items-center h-full">
@@ -49,13 +49,13 @@ const VideoCarousel = () => {
                 >
                   {index === currentIndex && <>
 
-                    <img className="absolute left-0 transform -translate-y-1/2 w-14 z-10" style={{ top: '54%' }} src={NextButton} onClick={handlePrev} />
-                    <img className="absolute right-0 transform -translate-y-1/2 w-14 z-10 rotate-180" style={{ top: '50%' }} src={NextButton} onClick={handleNext} />                </>
+                    <img className="absolute left-0 transform -translate-y-1/2 w-20 z-10 cursor-pointer" style={{ top: '54%' }} src={NextButton} onClick={handlePrev} />
+                    <img className="absolute right-0 transform -translate-y-1/2 w-20 z-10 rotate-180 cursor-pointer" style={{ top: '50%' }} src={NextButton} onClick={handleNext} />                </>
                   }
                   <div className="w-full h-full bg-gray-300 flex items-center justify-center rounded-custom p-2">
-                    <video className="w-full h-full bg-black flex items-center justify-center rounded-custom ">
-                      <source className='w-full h-full' src={slide.content} />
-                    </video>
+                    <img className="w-full h-full bg-black flex items-center justify-center rounded-custom " src={slide.content}/>
+                      {/* <source className='w-full h-full' src={slide.content} /> */}
+                    {/* </video> */}
                   </div>
                 </div>
               </>

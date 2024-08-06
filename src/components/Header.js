@@ -75,7 +75,6 @@ const Header = () => {
       <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
             <img alt="" src={HomeLogo} className="h-8 mr-48 w-auto" />
           </a>
         </div>
@@ -141,7 +140,7 @@ const Header = () => {
             Contact Us
           </button>
         </div>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-5 flex items-center">
+        <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-5 ml-10 flex items-center">
           <div className="text-sm font-semibold leading-6 ml-9 text-gray-600 w-44">
             Are You a Vendor?
           </div>
