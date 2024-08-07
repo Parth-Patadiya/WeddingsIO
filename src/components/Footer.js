@@ -25,7 +25,7 @@ const Footer = () => {
             <img className='w-5' src={YouTube} alt="YouTube" />
           </div>
         </div>
-        <div className='w-full flex'>
+        <div className='w-full flex flex-col sm:flex-row'>
           <div className='w-full md:w-[30%] mb-8 md:mb-0'>
             <div className='flex flex-col items-start mr-3'>
               <div className='mb-3 text-sm'>Navigation</div>
@@ -36,7 +36,7 @@ const Footer = () => {
           </div>
           <div className='w-full md:w-[30%] mb-8 md:mb-0'>
             <div className='flex flex-col items-start mr-3'>
-              <div className='mb-3 text-sm  text-justify'>Wedding Venues</div>
+              <div className='mb-3 text-sm '>Wedding Venues</div>
               {['Loft Weddings', 'Concert Venues', 'Other Venues', 'Hotel Weddings', 'Restaurants Weddings', 'Winery Weddings', 'Farm Weddings', 'Mansion Weddings', 'Wedding Banquet Halls', 'Banquet Halls', 'Micro Weddings', 'Destination Weddings'].map((item, index) => (
                 <a key={index} href='#' className='text-xs mb-2 text-gray-400 text-start'>{item}</a>
               ))}
@@ -44,7 +44,7 @@ const Footer = () => {
           </div>
           <div className='w-full md:w-[30%] mb-8 md:mb-0'>
             <div className='flex flex-col items-start mr-3'>
-              <div className='mb-3 text-sm  text-justify'>Wedding Vendors</div>
+              <div className='mb-3 text-sm '>Wedding Vendors</div>
               {['Catering', 'Photography', 'Videography', 'Planning and Coordination', 'DJ and Music', 'Cakes and Baking', 'Florals and Decor', 'Rentals', 'Officiants', 'Entertainment', 'Photo Booths', 'Transportation', 'Invitations', 'Stationery', 'Accommodations', 'Travel and Honeymoon'].map((item, index) => (
                 <a key={index} href='#' className='text-xs mb-2 text-gray-400 text-start'>{item}</a>
               ))}
@@ -52,7 +52,7 @@ const Footer = () => {
           </div>
           <div className='w-full md:w-[30%]'>
             <div className='flex flex-col items-start mr-3'>
-              <div className='mb-3 text-sm  text-justify'>Wedding Attire & Accessories</div>
+              <div className='mb-3 text-sm text-start'>Wedding Attire & Accessories</div>
               {['Dresses', 'Suiting', 'Jewelry', 'Hair and Makeup', 'Fitness', 'Accessories'].map((item, index) => (
                 <a key={index} href='#' className='text-xs mb-2 text-gray-400 text-start'>{item}</a>
               ))}
