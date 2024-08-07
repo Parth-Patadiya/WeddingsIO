@@ -14,6 +14,7 @@ module.exports = {
       },
       borderRadius: {
         'custom': '2rem',
+        'other': '0.4rem'
       },
       fontFamily: {
         sans: ['Lora'],
