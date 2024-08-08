@@ -14,7 +14,7 @@ const Header = () => {
 
     return (
       <Dialog open={isOpen} onClose={onClose} className="fixed inset-0 z-40 flex items-center justify-center bg-black bg-opacity-50">
-        <div className="relative bg-white rounded-lg p-6 w-full max-w-md mx-auto">
+        <div className="relative bg-white rounded-lg py-10 flex flex-col items-center px-6 w-full max-w-lg mx-auto">
           <button
             className="absolute top-3 right-3 text-gray-500 hover:text-gray-700"
             onClick={onClose}
@@ -22,11 +22,11 @@ const Header = () => {
             <XMarkIcon className="h-6 w-6 text-yellow-500" aria-hidden="true" />
           </button>
           <h2 className="text-2xl font-bold mb-4 flex justify-center">Sign Up</h2>
-          <h2 className="text-sm mb-4 text-gray-300 flex justify-center">Sign Up for Subscribe to our Newsletter</h2>
-          <form>
+          <h2 className="text-sm mb-10 w-[70%] text-gray-500 flex text-center justify-center">Sign Up for Subscribe to our Newsletter</h2>
+          <form className='w-[70%]'>
             <div className="mb-4 flex justify-center">
               <input
-                className="w-[70%] px-3 py-2 border border-gray-200 rounded-md"
+                className="w-full px-3 py-2 border border-gray-200 rounded-md"
                 placeholder="Enter Your Name Here"
                 type="text"
                 id="name"
@@ -35,7 +35,7 @@ const Header = () => {
             </div>
             <div className="mb-4 flex justify-center">
               <input
-                className="w-[70%] px-3 py-2 border border-gray-200 rounded-md"
+                className="w-full px-3 py-2 border border-gray-200 rounded-md"
                 placeholder="Enter Your Email Here"
                 type="email"
                 id="email"
@@ -44,14 +44,14 @@ const Header = () => {
             </div>
             <div className="mb-4 flex justify-center">
               <input
-                className="w-[70%] px-3 py-2 border border-gray-200 rounded-md"
+                className="w-full px-3 py-2 border border-gray-200 rounded-md"
                 placeholder="Enter Your Password Here"
                 type="password"
                 id="password"
                 required
               />
             </div>
-            <div className="w-full flex justify-center">
+            <div className="w-full pt-5 flex justify-center">
               <button className="flex px-10 py-2 rounded-full bg-yellow-500 text-light-500 border hover:bg-yellow-500 hover:text-white focus:outline-none border-light text-sm">
                 Sign Up
               </button>
