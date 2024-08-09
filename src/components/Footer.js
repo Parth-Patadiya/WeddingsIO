@@ -5,9 +5,9 @@ const Footer = () => {
   return (
     <div className='flex flex-col items-center justify-center w-full mt-24 pb-10 bg-gray-100'>
       <div className='w-11/12 lg:w-[80%] my-16 flex flex-col items-center justify-center md:flex-row md:items-start'>
-        <div className='w-full md:w-[40%] flex flex-col items-center md:items-start mb-8 md:mb-0'>
-          <img className='w-[50%] mb-12' src={HomeLogo} alt="Home Logo" />
-          <div className='w-[60%] flex flex-col space-y-2 items-center sm:items-start'>
+        <div className='w-full md:w-[40%] flex flex-col items-start mb-8 md:mb-0'>
+          <img className='w-[50%] mb-10 sm:mb-12' src={HomeLogo} alt="Home Logo" />
+          <div className='w-[60%] flex flex-col space-y-2 items-start'>
             <div className='flex items-center'>
               <img className='w-5 mr-2' src={Mail} alt="Mail" />
               <div className='text-xs'>support@wedding.io</div>
@@ -17,12 +17,12 @@ const Footer = () => {
               <div className='text-xs'>+1 (800) 123-4567</div>
             </div>
           </div>
-          <div className='w-[60%] flex justify-center md:justify-start my-10 space-x-2'>
-            <img className='w-5' src={Instagram} alt="Instagram" />
-            <img className='w-5' src={Facebook} alt="Facebook" />
-            <img className='w-5' src={Tiktok} alt="Tiktok" />
-            <img className='w-5' src={Linkedin} alt="Linkedin" />
-            <img className='w-5' src={YouTube} alt="YouTube" />
+          <div className='w-[60%] flex justify-start my-10 space-x-2'>
+            <img className='sm:w-5 w-9' src={Instagram} alt="Instagram" />
+            <img className='sm:w-5 w-9' src={Facebook} alt="Facebook" />
+            <img className='sm:w-5 w-9' src={Tiktok} alt="Tiktok" />
+            <img className='sm:w-5 w-9' src={Linkedin} alt="Linkedin" />
+            <img className='sm:w-5 w-9' src={YouTube} alt="YouTube" />
           </div>
         </div>
         <div className='w-full flex flex-col sm:flex-row'>

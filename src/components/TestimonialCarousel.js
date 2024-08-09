@@ -93,7 +93,7 @@ const TestimonialCarousel = () => {
           ))}
         </div>
       </div>
-      <img className='flex-col items-center justify-center w-[40%] my-10' src={Design} />
+      <img className='flex-col items-center justify-center w-[70%] sm:w-[50%] my-10' src={Design} />
     </div>
   );
 };

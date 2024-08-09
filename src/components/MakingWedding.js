@@ -5,7 +5,7 @@ import { ReactComponent as Icon } from '../assets/Images/Stars.svg';
 const MakingWedding = () => {
   return (
     <div className='flex align-middle flex-col items-center justify-center mt-4'>
-      <img className='flex-col items-center justify-center w-[40%] my-10' src={Design} />
+      <img className='flex-col items-center justify-center w-[70%] sm:w-[50%] my-10' src={Design} />
       <div className='w-[60%] flex align-middle flex-col items-center justify-center mb-50'>
         <Icon className='w-24 h-7 mb-2.5 mt-8' />
         <div className="text-2xl md:text-4xl font-semibold mt-4">
