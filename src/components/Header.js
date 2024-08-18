@@ -145,7 +145,9 @@ const Header = () => {
           <div className="text-sm font-semibold leading-6 ml-9 text-gray-600 w-44">
             Are You a Vendor?
           </div>
-          <button className="bg-light text-white font-bold py-1 px-3 w-28 rounded-full hover:bg-yellow-500 ">
+          <button className="bg-light text-white font-bold py-1 px-3 w-28 rounded-full hover:bg-yellow-500 "
+          onClick={()=>navigate('/signIn')}
+          >
             Log In
           </button>
           <button
@@ -218,6 +220,7 @@ const Header = () => {
                 <a
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  onClick={()=>navigate('/signIn')}
                 >
                   Log in
                 </a>

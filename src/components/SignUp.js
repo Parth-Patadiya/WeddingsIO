@@ -3,7 +3,6 @@ import { ReactComponent as PasswordImg } from '../assets/Images/Signup/Password.
 import { useNavigate } from 'react-router-dom';
 
 const SignUp = () => {
-    // const PasswordImg = require('.')
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
     const [showPassword, setShowPassword] = useState(false);
@@ -26,7 +25,7 @@ const SignUp = () => {
 
     return (
         <div className='w-full flex justify-center '>
-            <div className='md:w-[70%] w-[95%] rounded-3xl border-gray-300 border-[1px] flex flex-col justify-center my-40 py-20 md:px-16 px-1'>
+            <div className='md:w-[60%] w-[95%] rounded-3xl border-gray-300 border-[1px] flex flex-col justify-center my-40 py-20 md:px-16 px-1'>
                 <p className='text-sm font-semibold text-gray-400 pb-2'>Sign up to Wedding.io</p>
                 <p className='text-3xl font-semibold '>Create your Account</p>
                 <form className="flex justify-center">
@@ -173,7 +172,7 @@ const SignUp = () => {
                         </div>
                     </div>
                 </form>
-                <label className='flex justify-start px-5'>
+                <label className='flex justify-start px-5 pb-2'>
                     <input
                         type="checkbox"
                         checked={isChecked}
@@ -198,7 +197,7 @@ const SignUp = () => {
                 <div className='w-full flex justify-center pt-10'>
                     <button
                         className="bg-light text-white font-bold md:py-4 py-3 md:px-16 px-5 w-[70%] rounded-full hover:bg-yellow-500"
-                        onClick={() => navigate('/signUp')}
+                        onClick={() => navigate('/verifyEmail')}
                     >
                         Create account
                     </button>
