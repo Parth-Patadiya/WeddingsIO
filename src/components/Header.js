@@ -10,71 +10,18 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activePage, setActivePage] = useState("home");
   const navigate = useNavigate();
-  // const SignupModal = ({ isOpen, onClose }) => {
-  //   if (!isOpen) return null;
-
-  //   return (
-  //     <Dialog open={isOpen} onClose={onClose} className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-  //       <div className="relative bg-white rounded-lg py-10 flex flex-col items-center px-6 w-full max-w-lg mx-auto">
-  //         <button
-  //           className="absolute top-3 right-3 text-gray-500 hover:text-gray-700"
-  //           onClick={onClose}
-  //         >
-  //           <XMarkIcon className="h-6 w-6 text-yellow-500" aria-hidden="true" />
-  //         </button>
-  //         <h2 className="text-2xl font-bold mb-4 flex justify-center">Sign Up</h2>
-  //         <h2 className="text-sm mb-10 w-[70%] text-gray-500 flex text-center justify-center">Sign Up for Subscribe to our Newsletter</h2>
-  //         <form className="w-[70%]">
-  //           <div className="mb-4 flex justify-center">
-  //             <input
-  //               className="w-full px-3 py-2 border border-gray-200 rounded-md"
-  //               placeholder="Enter Your Name Here"
-  //               type="text"
-  //               id="name"
-  //               required
-  //             />
-  //           </div>
-  //           <div className="mb-4 flex justify-center">
-  //             <input
-  //               className="w-full px-3 py-2 border border-gray-200 rounded-md"
-  //               placeholder="Enter Your Email Here"
-  //               type="email"
-  //               id="email"
-  //               required
-  //             />
-  //           </div>
-  //           <div className="mb-4 flex justify-center">
-  //             <input
-  //               className="w-full px-3 py-2 border border-gray-200 rounded-md"
-  //               placeholder="Enter Your Password Here"
-  //               type="password"
-  //               id="password"
-  //               required
-  //             />
-  //           </div>
-  //           <div className="w-full pt-5 flex justify-center">
-  //             <button className="flex px-10 py-2 rounded-full bg-yellow-500 text-light-500 border hover:bg-yellow-500 hover:text-white focus:outline-none border-light text-sm">
-  //               Sign Up
-  //             </button>
-  //           </div>
-  //         </form>
-  //       </div>
-  //     </Dialog>
-  //   );
-  // };
-
-  // const openModal = () => {
-  //   setIsModalOpen(true);
-  // };
-
-  // const closeModal = () => {
-  //   setIsModalOpen(false);
-  // };
-  const Home = () => {
+  const home = () => {
     setActivePage("home");
     navigate('/');
   }
-
+  const handleSignUp = () =>{
+    navigate('/signUp');
+    setMobileMenuOpen(false);
+  }
+  const handleSignIn = () =>{
+    navigate('/signIn');
+    setMobileMenuOpen(false);
+  }
   return (
     // <header className= {`${isModalOpen ? "blur-sm" : ""} bg-white sticky top-0 px-13 shadow-md z-50`}>
     <header className="bg-white sticky top-0 px-13 shadow-md z-50">
@@ -100,7 +47,7 @@ const Header = () => {
                 ? "text-sm font-semibold leading-6 text-black p-1 border-b-2 border-light"
                 : "text-sm font-semibold leading-6 p-1 text-gray-600"
               }`}
-            onClick={Home}
+            onClick={home}
           >
             Home
           </button>
@@ -163,7 +110,7 @@ const Header = () => {
         <div className="fixed inset-0 z-30 bg-black bg-opacity-50" />
         <DialogPanel className="fixed inset-y-0 right-0 z-40 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
+            <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <img alt="" src={HomeLogo} className="h-8 w-auto" />
             </a>
@@ -186,51 +133,51 @@ const Header = () => {
                   Home
                 </a>
                 <a
-                  href="#"
+                  href="/"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   About Us
                 </a>
                 <a
-                  href="#"
+                  href="/"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Features
                 </a>
                 <a
-                  href="#"
+                  href="/"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Resources
                 </a>
                 <a
-                  href="#"
+                  href="/"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Contact Us
                 </a>
                 <a
-                  href="#"
+                  href="/"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Are You a Vendor?
                 </a>
               </div>
               <div className="py-6">
-                <a
-                  href="#"
+                <p
+                  // href="/"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  onClick={()=>navigate('/signIn')}
+                  onClick={handleSignIn}
                 >
                   Log in
-                </a>
-                <a
-                  href="#"
+                </p>
+                <p
+                  // href="/"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  onClick={() => navigate('/signUp')}
+                  onClick={handleSignUp}
                 >
                   Sign Up
-                </a>
+                </p>
               </div>
             </div>
           </div>
