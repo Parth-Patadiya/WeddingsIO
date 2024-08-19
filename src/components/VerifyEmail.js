@@ -18,20 +18,20 @@ const VerifyEmail = () => {
   };
   return (
     <div className="w-full flex justify-center my-32">
-      <div className="md:w-[30%] w-[95%] rounded-3xl border-gray-300 border-[1px] flex flex-col justify-center my-30 py-10 md:px-10 px-1">
+      <div className="md:w-[30%] w-[85%] rounded-3xl border-gray-300 border-[1px] flex flex-col justify-center my-30 py-10 md:px-10 px-5">
         <div className="w-full flex">
           <a href="/signUp" className="w-full flex justify-end">
             <img className="w-[7%] h-[75%] mb-2.5" src={Back} alt="" />
           </a>
         </div>
-        <p className="text-3xl font-semibold mt-4">Email Verification</p>
+        <p className="text-3xl md:text-2xl font-semibold mt-4">Email Verification</p>
         <div className="flex justify-center pt-2">
-          <p className="text-sm font-semibold text-gray-400 pb-4 mr-1">
+          <p className="md:text-sm text-xs font-semibold text-gray-400 pb-4 mr-1">
             Enter the Code sent to
           </p>
           <a
             href="mailto:wedding.io@example"
-            className="text-sm font-semibold text-blue-800 pb-4"
+            className="md:text-sm text-xs font-semibold text-blue-800 pb-4"
           >
             wedding.io@example
           </a>

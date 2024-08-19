@@ -18,11 +18,11 @@ const ForgotePassword = () => {
   };
   return (
     <div className="w-full flex justify-center my-32">
-      <div className="md:w-[30%] w-[95%] rounded-3xl border-gray-300 border-[1px] flex flex-col justify-center my-30 py-14 md:px-10 px-1">
+      <div className="md:w-[30%] w-[85%] rounded-3xl border-gray-300 border-[1px] flex flex-col justify-center my-30 py-14 md:px-10 px-5">
         <p className="text-sm font-semibold text-gray-400 pb-4">
-          Sign in to Wedding.io
+          Reset Password to Wedding.io
         </p>
-        <p className="text-3xl font-semibold ">Hello, New Password !</p>
+        <p className="md:text-3xl text-2xl  font-semibold ">Hello, New Password !</p>
         <form className="flex justify-center">
           <div className="w-full pt-6">
             <div className="flex md:flex-row flex-col">

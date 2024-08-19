@@ -9,6 +9,7 @@ import SignIn from './components/SignIn';
 import SignUpSuccess from './components/SignUpSuccess';
 import VerifyEmail from './components/VerifyEmail';
 import ForgotePassword from './components/ForgotePassword';
+import Email from './components/Email';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path='/successUp' Component={SignUpSuccess} />
           <Route path='/verifyEmail' Component={VerifyEmail} />
           <Route path='/forgotPassword' Component={ForgotePassword} />
+          <Route path='/email' Component={Email} />
         </Routes>
       <Footer />
       </Router>

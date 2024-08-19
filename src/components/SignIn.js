@@ -17,11 +17,11 @@ const SignIn = () => {
 
   return (
     <div className="w-full flex justify-center my-32">
-      <div className="md:w-[30%] w-[95%] rounded-3xl border-gray-300 border-[1px] flex flex-col justify-center my-30 py-14 md:px-10 px-1">
+      <div className="md:w-[30%] w-[85%] rounded-3xl border-gray-300 border-[1px] flex flex-col justify-center my-30 py-14 md:px-10 px-5">
         <p className="text-sm font-semibold text-gray-400 pb-4">
           Sign in to Wedding.io
         </p>
-        <p className="text-3xl font-semibold ">Hello, welcome back !</p>
+        <p className="md:text-3xl text-2xl  font-semibold ">Hello, welcome back !</p>
         <form className="flex justify-center">
           <div className="w-full pt-6">
             <div className="flex md:flex-row flex-col">
@@ -93,15 +93,15 @@ const SignIn = () => {
               onChange={handleCheckboxChange}
               className="accent-light border-gray-400-2 mr-2"
             />
-            <p className="text-gray-500">Remember me</p>
+            <p className="text-gray-500 md:text-lg text-xs">Remember me</p>
           </label>
-          <a href="/forgotPassword" className="text-blue-900 text-sm font-semibold px-4" >Forgot password?</a>
+          <a href="/email" className="text-blue-900 md:text-lg text-xs font-semibold px-4" >Forgot password?</a>
         </div>
 
         <div className="w-full flex justify-center pt-10">
           <button
             className="bg-light text-white font-bold md:py-4 py-3 md:px-16 px-5 w-[70%] rounded-full hover:bg-yellow-500"
-            onClick={() => navigate("/successIn")}
+            onClick={() => navigate("/")}
           >
             Create account
           </button>

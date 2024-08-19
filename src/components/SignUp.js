@@ -25,16 +25,16 @@ const SignUp = () => {
 
     return (
         <div className='w-full flex justify-center '>
-            <div className='md:w-[60%] w-[95%] rounded-3xl border-gray-300 border-[1px] flex flex-col justify-center my-40 py-20 md:px-16 px-1'>
+            <div className='md:w-[60%] w-[85%] rounded-3xl border-gray-300 border-[1px] flex flex-col justify-center my-40 py-20 md:px-16 px-5'>
                 <p className='text-sm font-semibold text-gray-400 pb-2'>Sign up to Wedding.io</p>
-                <p className='text-3xl font-semibold '>Create your Account</p>
+                <p className='md:text-3xl text-2xl font-semibold '>Create your Account</p>
                 <form className="flex justify-center">
                     <div className='w-full pt-6'>
                         <div className="flex md:flex-row flex-col">
                             <div className='flex flex-col md:p-5 p-2  md:w-[50%] w-full'>
                                 <div className='felx text-start'>
                                     <label className='felx text-start w-auto text-gray-400 font-semibold'>First name</label>
-                                    <span className="text-red-500 ml-1">*</span>
+                                    {/* <span className="text-red-500 ml-1">*</span> */}
                                 </div>
                                 <input
                                     className="w-full mt-2 px-3 py-2 border border-gray-200 rounded-md"
@@ -46,7 +46,7 @@ const SignUp = () => {
                             <div className='flex flex-col md:p-5 p-2 md:w-[50%] w-full'>
                                 <div className='felx text-start'>
                                     <label className='felx text-start w-auto text-gray-400 font-semibold'>Last name</label>
-                                    <span className="text-red-500 ml-1">*</span>
+                                    {/* <span className="text-red-500 ml-1">*</span> */}
                                 </div>
                                 <input
                                     className="w-full mt-2 px-3 py-2 border border-gray-200 rounded-md"
@@ -72,7 +72,7 @@ const SignUp = () => {
                             <div className='flex flex-col md:p-5 p-2 md:w-[50%] w-full'>
                                 <div className='felx text-start'>
                                     <label className='felx text-start w-auto text-gray-400 font-semibold'>Phone Number</label>
-                                    <span className="text-red-500 ml-1">*</span>
+                                    {/* <span className="text-red-500 ml-1">*</span> */}
                                 </div>
                                 <input
                                     className="w-full mt-2 px-3 py-2 border border-gray-200 rounded-md"
@@ -172,25 +172,25 @@ const SignUp = () => {
                         </div>
                     </div>
                 </form>
-                <label className='flex justify-start px-5 pb-2'>
+                <label className='flex justify-start md:px-5 px-2 pb-2'>
                     <input
                         type="checkbox"
                         checked={isChecked}
                         onChange={handleCheckboxChange}
                         className='accent-light border-gray-400-2 mr-2'
                     />
-                    <p className='text-gray-500'>
+                    <p className='text-gray-500 md:text-lg text-xs'>
                         Remember me
                     </p>
                 </label>
-                <label className='flex justify-start px-5 '>
+                <label className='flex justify-start md:px-5  px-2'>
                     <input
                         type="checkbox"
                         checked={isCheckedPlc}
                         onChange={handleCheckboxChangePlc}
                         className='accent-light border-gray-400-2 mr-2'
                     />
-                    <p className='text-gray-500'>
+                    <p className='text-gray-500 md:text-lg text-xs'>
                         I agree to all the Terms and Privacy policy
                     </p>
                 </label>
