@@ -30,7 +30,7 @@ ScrollToTop();
 
   return (
     <div className="w-full flex justify-center">
-      <div className="md:w-[30%] w-[85%] rounded-3xl border-gray-300 border-[1px] flex flex-col justify-center md:my-40 my-16 py-14 md:px-10 px-5">
+      <div className="sm:w-[60%] md:w-[85%] w-[85%] rounded-3xl border-gray-300 border-[1px] flex flex-col justify-center md:my-40 my-16 py-14 md:px-10 px-5">
         <p className="text-sm font-semibold text-gray-400 pb-4">
           Reset Password to Wedding.io
         </p>

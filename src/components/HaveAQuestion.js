@@ -6,7 +6,7 @@ import { ReactComponent as Phone } from '../assets/Images/HaveAQuestion/Phone.sv
 const HaveAQuestion = () => {
   return (
     <div className='flex align-middle flex-col items-center justify-center mt-4 h-full bg-gray-100'>
-      <div className='sm:w-[40%] w-[75%] flex align-middle flex-col items-center justify-center'>
+      <div className='sm:w-[40%] md:w-[55%] w-[75%] flex align-middle flex-col items-center justify-center'>
         <Icon className='w-24 h-7 mb-4 mt-10' />
         <h1 className="text-2xl md:text-4xl font-semibold my-6">
           Have a question?

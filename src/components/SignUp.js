@@ -36,7 +36,7 @@ const SignUp = () => {
 
     return (
         <div className='w-full flex justify-center '>
-            <div className='md:w-[60%] w-[85%] rounded-3xl border-gray-300 border-[1px] flex flex-col justify-center md:my-40 my-16 py-20 md:px-16 px-5'>
+            <div className='sm:w-[60%] md:w-[85%] w-[85%] rounded-3xl border-gray-300 border-[1px] flex flex-col justify-center md:my-40 my-16 py-20 md:px-16 px-5'>
                 <p className='text-sm font-semibold text-gray-400 pb-2'>Sign up to weddings.io</p>
                 <p className='md:text-3xl text-2xl font-semibold '>Create your Account</p>
                 <form className="flex justify-center">
