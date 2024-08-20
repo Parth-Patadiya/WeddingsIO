@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
 
 const FeedBackCarousel = () => {
   const testimonials = [
@@ -57,9 +56,9 @@ const FeedBackCarousel = () => {
                       </svg>
                     ))}
                   </div>
-                  <p className="text-2xl text-gray-700 mt-4 italic">"{testimonial.text}"</p>
-                  <p className="text-lg text-gray-700 mt-4">{testimonial.name}</p>
-                  <p className="text-lg text-gray-400 ">{testimonial.company}</p>
+                  <p className="sm:text-2xl text-md text-gray-700 mt-4 italic">"{testimonial.text}"</p>
+                  <p className="sm:text-lg text-sm text-gray-700 mt-4">{testimonial.name}</p>
+                  <p className="sm:text-lg text-sm text-gray-400 ">{testimonial.company}</p>
                 </div>
               </div>
             ))}

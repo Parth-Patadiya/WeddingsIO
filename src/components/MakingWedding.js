@@ -22,7 +22,7 @@ const MakingWedding = () => {
         </div>
       </div>
       <div className='w-full md:w-[60%] flex flex-col sm:flex-col md:flex-col lg:flex-row justify-between md:items-center items-center'>
-        <div className='w-[93%] lg:w-[48.5%] h-[264px] lg:mb-0 mb-5 p-8 border border-gray-200 rounded-2xl flex flex-col justify-start'>
+        <div className='w-[80%] lg:w-[48.5%] h-[264px] lg:mb-0 mb-5 p-8 border border-gray-200 rounded-2xl flex flex-col justify-start'>
           <img className='w-[20%] sm:w-[15%]' src={MakingW1} alt='' />
           <div className="font-bold text-xl rounded-lg text-start mb-4 mt-8">
             Enhanced Experience
@@ -34,7 +34,7 @@ const MakingWedding = () => {
             stay creative, fun and focus on your vision.
           </div>
         </div>
-        <div className='w-[93%] lg:w-[48.5%] md:w- p-8 border border-gray-200 rounded-2xl flex flex-col justify-start'>
+        <div className='w-[80%] lg:w-[48.5%] md:w- p-8 border border-gray-200 rounded-2xl flex flex-col justify-start'>
           <img className='w-[20%] sm:w-[15%]' src={MakingW2} alt='' />
           <div className="font-bold text-xl rounded-lg text-start mb-4 mt-8">
             Stress-Free Planning
@@ -45,7 +45,7 @@ const MakingWedding = () => {
         </div>
       </div>
       <div className='w-full md:w-[60%] mt-6 flex flex-col sm:flex-col md:flex-col lg:flex-row justify-between md:items-center items-center'>
-        <div className='w-[93%] lg:w-[48.5%] p-8 border lg:mb-0 mb-5 border-gray-200 rounded-2xl flex flex-col justify-start'>
+        <div className='w-[80%] lg:w-[48.5%] p-8 border lg:mb-0 mb-5 border-gray-200 rounded-2xl flex flex-col justify-start'>
           <img className='w-[20%] sm:w-[15%]' src={MakingW3} alt='' />
           <div className="font-bold text-xl rounded-lg text-start mb-4 mt-8">
             Save-time
@@ -54,7 +54,7 @@ const MakingWedding = () => {
             The average wedding takes 6-12 months to plan, with weddings.io, you can save up to 50% of your time.
           </div>
         </div>
-        <div className='w-[93%] lg:w-[48.5%] p-8 border border-gray-200 rounded-2xl flex flex-col justify-start'>
+        <div className='w-[80%] lg:w-[48.5%] p-8 border border-gray-200 rounded-2xl flex flex-col justify-start'>
           <img className='w-[20%] sm:w-[15%]' src={MakingW4} alt='' />
           <div className="font-bold text-xl rounded-lg text-start mb-4 mt-8">
             Collaborative Planning

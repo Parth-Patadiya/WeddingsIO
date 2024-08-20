@@ -13,11 +13,11 @@ const Footer = () => {
           <div className='lg:w-[60%] w-full flex flex-col space-y-2 items-start'>
             <div className='flex items-center'>
               <Mail className='w-4 mr-3' />
-              <div className='sm:text-xs text-xl'>support@wedding.io</div>
+              <div className='sm:text-xs text-lg font-semibold'>support@wedding.io</div>
             </div>
             <div className='flex items-center'>
               <Phone className='sm:w-4 w-5 h-4 mr-2' />
-              <div className='sm:text-xs text-xl'>+1 (800) 123-4567</div>
+              <div className='sm:text-xs text-lg font-semibold'>+1 (800) 123-4567</div>
             </div>
           </div>
           <div className='w-full lg:w-[60%] flex sm:justify-start justify-center my-10 sm:space-x-2 space-x-5'>

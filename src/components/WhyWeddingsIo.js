@@ -15,16 +15,16 @@ const WhyWeddingsIo = () => {
         </div>
         <div className='flex w-full flex-col sm:flex-row  justify-between'>
           <div className='sm:w-[32.5%] mb-3 sm:mb-0 w-full p-3 border border-1 border-gray-200 rounded-lg'>
-            <img src={Ww1} className='w-full' />
+            <img src={Ww1} className='w-full' alt="" />
             <div className='flex justify-between'>
               <div className='w-[30%] pt-3  rounded-lg'>
-                <img src={Ww2} className='w-full' />
+                <img src={Ww2} className='w-full' alt="" />
               </div>
               <div className='w-[30%] pt-3  rounded-lg'>
-                <img src={Ww2} className='w-full' />
+                <img src={Ww2} className='w-full' alt="" />
               </div>
               <div className='w-[30%] pt-3  rounded-lg'>
-                <img src={Ww2} className='w-full' />
+                <img src={Ww2} className='w-full' alt="" />
               </div>
             </div>
             <div className='flex w-full mt-4'>
@@ -44,16 +44,16 @@ const WhyWeddingsIo = () => {
             </div>
           </div>
           <div className='sm:w-[32.5%] mb-3 sm:mb-0 w-full p-3 border border-1 border-gray-200 rounded-lg'>
-            <img src={Ww1} className='w-full' />
+            <img src={Ww1} className='w-full' alt="" />
             <div className='flex justify-between'>
               <div className='w-[30%] pt-3  rounded-lg'>
-                <img src={Ww2} className='w-full' />
+                <img src={Ww2} className='w-full' alt="" />
               </div>
               <div className='w-[30%] pt-3  rounded-lg'>
-                <img src={Ww3} className='w-full' />
+                <img src={Ww3} className='w-full' alt="" />
               </div>
               <div className='w-[30%] pt-3  rounded-lg'>
-                <img src={Ww4} className='w-full' />
+                <img src={Ww4} className='w-full' alt="" />
               </div>
             </div>
             <div className='flex w-full mt-4'>
@@ -73,16 +73,16 @@ const WhyWeddingsIo = () => {
             </div>
           </div>
           <div className='sm:w-[32.5%] mb-3 sm:mb-0 w-full p-3 border border-1 border-gray-200 rounded-lg'>
-            <img src={Ww1} className='w-full' />
+            <img src={Ww1} className='w-full' alt=''/>
             <div className='flex justify-between'>
               <div className='w-[30%] pt-3  rounded-lg'>
-                <img src={Ww2} className='w-full' />
+                <img src={Ww2} className='w-full' alt="" />
               </div>
               <div className='w-[30%] pt-3  rounded-lg'>
-                <img src={Ww3} className='w-full' />
+                <img src={Ww3} className='w-full' alt=''/>
               </div>
               <div className='w-[30%] pt-3  rounded-lg'>
-                <img src={Ww4} className='w-full' />
+                <img src={Ww4} className='w-full' alt="" />
               </div>
             </div>
             <div className='flex w-full mt-4'>
