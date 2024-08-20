@@ -86,30 +86,30 @@ const SignIn = () => {
           </div>
         </form>
         <div className="flex justify-between mt-3">
-          <label className="flex justify-start px-4">
+          <label className="flex justify-start md:px-4">
             <input
               type="checkbox"
               checked={isChecked}
               onChange={handleCheckboxChange}
               className="accent-light border-gray-400-2 mr-2"
             />
-            <p className="text-gray-500 md:text-lg text-xs">Remember me</p>
+            <p className="text-gray-500 md:text-md text-xs">Remember me</p>
           </label>
-          <a href="/email" className="text-blue-900 md:text-lg text-xs font-semibold px-4" >Forgot password?</a>
+          <a href="/email" className="text-blue-900 md:text-md text-xs font-semibold md:px-4" >Forgot password?</a>
         </div>
 
         <div className="w-full flex justify-center pt-10">
           <button
-            className="bg-light text-white font-bold md:py-4 py-3 md:px-16 px-5 w-[70%] rounded-full hover:bg-yellow-500"
+            className="bg-light text-white font-bold md:py-4 py-3 md:px-10 px-5 w-[70%] rounded-full hover:bg-yellow-500"
             onClick={() => navigate("/")}
           >
             Create account
           </button>
         </div>
         <div className="w-full flex pt-10 justify-center">
-          <p className="font-semibold flex">Don’t have an account?</p>
+          <p className="font-semibold text-start md:text-center flex md:text-md text-sm">Don’t have an account?</p>
           <a
-            className="font-semibold flex ml-1 text-blue-900 justify-center"
+            className="font-semibold flex ml-1 text-blue-900 justify-start md:text-md text-sm"
             href="/signUp"
           >
             Sign Up

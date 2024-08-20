@@ -179,7 +179,7 @@ const SignUp = () => {
                         onChange={handleCheckboxChange}
                         className='accent-light border-gray-400-2 mr-2'
                     />
-                    <p className='text-gray-500 md:text-lg text-xs'>
+                    <p className='text-gray-500 md:text-lg text-[0.60rem]'>
                         Remember me
                     </p>
                 </label>
@@ -190,7 +190,7 @@ const SignUp = () => {
                         onChange={handleCheckboxChangePlc}
                         className='accent-light border-gray-400-2 mr-2'
                     />
-                    <p className='text-gray-500 md:text-lg text-xs'>
+                    <p className='text-gray-500 md:text-lg text-[0.60rem]'>
                         I agree to all the Terms and Privacy policy
                     </p>
                 </label>
@@ -203,10 +203,10 @@ const SignUp = () => {
                     </button>
                 </div>
                 <div className='w-full flex pt-10 justify-center'>
-                    <p className='font-semibold flex'>
+                    <p className='font-semibold text-start md:text-center flex md:text-lg text-xs'>
                         Already have an account?
                     </p>
-                    <a className='font-semibold flex ml-1 text-blue-900 justify-center' href='/signIn'>
+                    <a className='font-semibold flex ml-1 text-blue-900 justify-start md:text-lg text-xs' href='/signIn'>
                         Sign In
                     </a>
                 </div>

@@ -1,4 +1,3 @@
-export const HomeLogo = require('../assets/Images/Logos/LogoHome.png');
 export const HeroSlider1 = require('../assets/Images/HeroSlider/lp-banner-01.webp');
 export const HeroSlider2 = require('../assets/Images/HeroSlider/lp-banner-02.webp');
 export const HeroSlider3 = require('../assets/Images/HeroSlider/lp-banner-03.webp');

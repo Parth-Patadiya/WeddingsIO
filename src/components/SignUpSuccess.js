@@ -7,14 +7,14 @@ const SignUpSuccess = () => {
     <div className="w-full flex justify-center my-32">
       <div className="md:w-[30%] w-[95%] rounded-3xl border-gray-300 border-[1px] flex flex-col justify-center my-30 py-14 md:px-10 px-1">
         <div className="w-full flex justify-center">
-            <img className="w-[10%] h-[75%] mb-2.5" src={Star} />
+            <img className="w-[10%] h-[75%] mb-2.5" src={Star} alt="" />
         </div>
         <p className="text-sm font-semibold text-gray-400 pb-4">
           Congratulations
         </p>
         <p className="text-3xl font-semibold ">Sign Up Success</p>
         <div className="w-full flex justify-center">
-            <img className="w-[80%] my-10" src={Success} />
+            <img className="w-[80%] my-10" src={Success} alt=""/>
         </div>
       </div>
     </div>

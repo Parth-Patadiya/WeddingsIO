@@ -2,9 +2,8 @@
 import { useState } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { HomeLogo } from "../common/commonImport";
 import { useNavigate } from "react-router-dom";
-
+import { ReactComponent as HomeLogo } from '../assets/Images/Logos/LogoHome.svg';
 const Header = () => {
   // const [isModalOpen, setIsModalOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -28,7 +27,7 @@ const Header = () => {
       <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
-            <img alt="" src={HomeLogo} className="h-8 mr-48 w-auto" />
+            <HomeLogo className="h-9 w-auto" />
           </a>
         </div>
         <div className="flex lg:hidden">
