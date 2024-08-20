@@ -2,11 +2,10 @@ import React, { useEffect, useRef, useState } from 'react';
 
 const FeedBackCarousel = () => {
   const testimonials = [
-    { id: 1, name: "Abc", company: "xyz abc pqr", text: "This is an amazing service! This is an amazing service! This is an amazing service! This is an amazing service! This is an amazing service! This is an amazing service! This is an amazing service!", rating: 5 },
-    { id: 2, name: "Abc", company: "xyz abc pqr", text: "I had a great experience. I had a great experience. I had a great experience. I had a great experience. I had a great experience. I had a great experience. I had a great experience. I had a great experience. I had a great experience. I had a great experience. ", rating: 4 },
-    { id: 3, name: "Abc", company: "xyz abc pqr", text: "Highly recommended! Highly recommended! Highly recommended! Highly recommended! Highly recommended! Highly recommended! Highly recommended! Highly recommended! Highly recommended! Highly recommended! ", rating: 5 },
-    { id: 4, name: "Abc", company: "xyz abc pqr", text: "Very satisfied with the product. Very satisfied with the product. Very satisfied with the product. Very satisfied with the product. Very satisfied with the product. Very satisfied with the product. ", rating: 4 },
-    { id: 5, name: "Abc", company: "xyz abc pqr", text: "An excellent choice for anyone. An excellent choice for anyone. An excellent choice for anyone. An excellent choice for anyone. ", rating: 5 },
+    { id: 1, name: "Emily", company: "Happily Married", text: "I recently had my wedding in 2023, and I can’t help but think how much time and money I could have saved with Weddings.io. Wedding planning is incredibly time-consuming, and any assistance is immensely appreciated. From selecting the perfect venue to coordinating with multiple vendors, the process can quickly become overwhelming.", rating: 5 },
+    { id: 2, name: "Sophia", company: "Happily Married", text: "I’m in the middle of planning my wedding while raising my infant. Having a platform like weddings.io would have saved me so much time especially since time in general is scarce at the moment. Having everything in one platform would absolutely change the game and help keep you organized. I can’t wait to see weddings.io in action and making the wedding planning process less stressful and way more fun!", rating: 4 },
+    { id: 3, name: "Ruth", company: "Happily Married", text: "I just had my destination wedding in Mexico and weddings.io would have saved me SO MUCH TIME AND MONEY. Wedding planning was so time consuming and stressful. Weddings.io would have been very helpful to navigate the convoluted process of wedding planning. Especially with how AI is going, we can’t wait to see the benefits of something like this!", rating: 5 },
+    { id: 4, name: "Vannly", company: "Happily Married", text: "Paul is obsessed with AI anything. This is very cool. I would have loved a tool that helped with finding vendors. I’ll mention this in the review. Authenticity and reliability are such hard things to find too", rating: 4 },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -26,7 +25,7 @@ const FeedBackCarousel = () => {
   }, [totalSlides]);
 
   return (
-    <div className='w-full max-w-2xl mx-auto'>
+    <div className='sm:w-full w-[90%] max-w-2xl mx-auto'>
       <div className="relative w-full overflow-hidden">
         <div className="relative mb-5 w-full flex items-center">
           <div
@@ -42,7 +41,7 @@ const FeedBackCarousel = () => {
                   transform: index === currentIndex ? 'scale(1.05)' : 'scale(0.95)',
                 }}
               >
-                <div className="flex w-full flex-col items-center justify-center p-6 bg-white rounded-lg">
+                <div className="flex w-full flex-col items-center justify-center sm:p-6 p-4 bg-white rounded-lg">
                   <div className="flex items-center space-x-1">
                     {[1, 2, 3, 4, 5].map((star) => (
                       <svg
@@ -56,7 +55,7 @@ const FeedBackCarousel = () => {
                       </svg>
                     ))}
                   </div>
-                  <p className="sm:text-2xl text-md text-gray-700 mt-4 italic">"{testimonial.text}"</p>
+                  <p className="sm:text-xl text-md text-gray-700 mt-4 italic">"{testimonial.text}"</p>
                   <p className="sm:text-lg text-sm text-gray-700 mt-4">{testimonial.name}</p>
                   <p className="sm:text-lg text-sm text-gray-400 ">{testimonial.company}</p>
                 </div>

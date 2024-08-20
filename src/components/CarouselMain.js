@@ -73,10 +73,10 @@ const CarouselMain = () => {
         className="absolute flex justify-center w-full h-full bg-cover bg-center transition-all duration-1000"
         style={{ backgroundImage: `url(${images[currentIndex]})` }}
       >
-        <div className="relative z-10 w-8/12 flex flex-col items-center justify-center h-full text-center text-white px-4">
-          <h2 className="text-lg font-light">Your personal AI wedding planner</h2>
-          <h1 className="text-5xl md:text-6xl font-bold mt-2">Revolutionize Your Wedding Planning with AI</h1>
-          <p className="mt-4 text-xl">
+        <div className="relative z-10 w-[90%] sm:w-[66.666667%] flex flex-col items-center justify-center h-full text-center text-white px-4">
+          <h2 className="sm:text-lg text-sm font-light italic">Your personal AI wedding planner</h2>
+          <h1 className="text-3xl md:text-6xl font-bold mt-2">Revolutionize Your Wedding Planning with AI</h1>
+          <p className="mt-4 sm:text-lg text-sm">
             Introducing weddings.io. The AI-powered wedding planner for a stress-free, organized and unforgettable wedding.
           </p>
           <button className="flex h-8  top-1/2 mr-2 pr-7 pl-4 pb-8 pt-2 sm:pt-3 my-6 rounded-full font-semibold bg-yellow-500 text-light-500 border hover:bg-yellow-500 hover:text-white focus:outline-none border-light text-sm" onClick={openModal}>
@@ -90,7 +90,7 @@ const CarouselMain = () => {
               Generate
             </button>
           </div> */}
-          <p className=" text-sm">No personal credit checks or founder guarantee.</p>
+          <p className="sm:text-sm text-xs">No personal credit checks or founder guarantee.</p>
         </div>
       </div>
       <div className="absolute bottom-4 w-full flex justify-center space-x-2">
