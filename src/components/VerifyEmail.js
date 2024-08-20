@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const VerifyEmail = () => {
   const Back = require("../assets/Images/VerifyEmail/Back.png");
@@ -16,9 +16,19 @@ const VerifyEmail = () => {
       element.nextSibling.focus();
     }
   };
+  const ScrollToTop = () =>  {
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
+
+    return null;
+}
+ScrollToTop();
   return (
-    <div className="w-full flex justify-center my-32">
-      <div className="md:w-[30%] w-[85%] rounded-3xl border-gray-300 border-[1px] flex flex-col justify-center my-30 py-10 md:px-10 px-5">
+    <div className="w-full flex justify-center">
+      <div className="md:w-[30%] w-[85%] rounded-3xl border-gray-300 border-[1px] flex flex-col justify-center md:my-40 my-16 py-10 md:px-10 px-5">
         <div className="w-full flex">
           <a href="/signUp" className="w-full flex justify-end">
             <img className="w-[7%] h-[75%] mb-2.5" src={Back} alt="" />
@@ -30,10 +40,10 @@ const VerifyEmail = () => {
             Enter the Code sent to
           </p>
           <a
-            href="mailto:wedding.io@example"
+            href="mailto:weddings.io@example"
             className="md:text-sm text-xs font-semibold text-blue-800 pb-4"
           >
-            wedding.io@example
+            weddings.io@example
           </a>
         </div>
         <div className="w-full flex justify-center">

@@ -1,13 +1,24 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useEffect } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Email = () => {
     const navigate = useNavigate();
+    const ScrollToTop = () =>  {
+      const { pathname } = useLocation();
+  
+      useEffect(() => {
+          window.scrollTo(0, 0);
+      }, [pathname]);
+  
+      return null;
+  }
+  ScrollToTop();
+  
   return (
-    <div className="w-full flex justify-center my-32">
-      <div className="md:w-[30%] w-[85%] rounded-3xl border-gray-300 border-[1px] flex flex-col justify-center my-30 py-14 md:px-10 px-5">
+    <div className="w-full flex justify-center">
+      <div className="md:w-[30%] w-[85%] rounded-3xl border-gray-300 border-[1px] flex flex-col justify-center md:my-40 my-16 py-14 md:px-10 px-5">
         <p className="text-sm font-semibold text-gray-400 pb-4">
-          Email to Wedding.io
+          Password assistance to weddings.io
         </p>
         <p className="md:text-3xl text-2xl  font-semibold ">
           Hello, Email !

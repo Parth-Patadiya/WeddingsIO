@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { ReactComponent as PasswordImg } from "../assets/Images/Signup/Password.svg";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const SignIn = () => {
   const [password, setPassword] = useState("");
@@ -15,11 +15,22 @@ const SignIn = () => {
     setShowPassword(!showPassword);
   };
 
+  const ScrollToTop = () =>  {
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
+
+    return null;
+}
+ScrollToTop();
+
   return (
-    <div className="w-full flex justify-center my-32">
-      <div className="md:w-[30%] w-[85%] rounded-3xl border-gray-300 border-[1px] flex flex-col justify-center my-30 py-14 md:px-10 px-5">
+    <div className="w-full flex justify-center">
+      <div className="md:w-[30%] w-[85%] rounded-3xl border-gray-300 border-[1px] flex flex-col justify-center md:my-40 my-16 py-14 md:px-10 px-5">
         <p className="text-sm font-semibold text-gray-400 pb-4">
-          Sign in to Wedding.io
+          Sign in to weddings.io
         </p>
         <p className="md:text-3xl text-2xl  font-semibold ">Hello, welcome back !</p>
         <form className="flex justify-center">
@@ -85,7 +96,7 @@ const SignIn = () => {
             </div>
           </div>
         </form>
-        <div className="flex justify-between mt-3">
+        <div className="flex justify-between mt-3 p-2">
           <label className="flex justify-start md:px-4">
             <input
               type="checkbox"

@@ -1,6 +1,7 @@
 import React from 'react';
 import { ReactComponent as Icon } from '../assets/Images/Stars.svg';
-import { Mail, Phone, Ww1, Ww2, Ww3, Ww4 } from '../common/commonImport';
+import { ReactComponent as Mail } from '../assets/Images/HaveAQuestion/Mail.svg';
+import { ReactComponent as Phone } from '../assets/Images/HaveAQuestion/Phone.svg';
 
 const HaveAQuestion = () => {
   return (
@@ -16,14 +17,14 @@ const HaveAQuestion = () => {
         <div className="text-sm text-gray-500 mb-8">
           support, or just want some advice, we're here for you.
         </div>
-        <div className='w-[60%] items-center justify-between flex flex-col sm:flex-col md:flex-col lg:flex-row'>
-          <div className='flex justify-start w-fit'>
-            <img className='w-5 mr-2' src={Mail} />
-            <div className='text-xs'>support@wedding.io</div>
+        <div className='w-[65%] items-center justify-between flex flex-col sm:flex-col md:flex-col lg:flex-row'>
+          <div className='flex justify-start w-fit items-center mb-2'>
+            <Mail className='w-4 mr-2' />
+            <div className='text-sm'>support@wedding.io</div>
           </div>
-          <div className='flex justify-end w-fit'>
-            <img className='w-4 h-4 mr-2' src={Phone} />
-            <div className='text-xs'>+1 (800) 123-4567</div>
+          <div className='flex justify-end w-fit mb-2'>
+            <Phone className='w-4 mr-2' />
+            <div className='text-sm'>+1 (800) 123-4567</div>
           </div>
         </div>
         <div className='flex flex-col w-full justify-between my-10'>
