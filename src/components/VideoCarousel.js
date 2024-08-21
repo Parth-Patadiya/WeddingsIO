@@ -49,11 +49,11 @@ const VideoCarousel = () => {
                 >
                   {index === currentIndex && <>
 
-                    <img className="absolute left-0 transform -translate-y-1/2 w-10 sm:w-20 z-10 cursor-pointer" style={{ top: '54%' }} src={NextButton} onClick={handlePrev} />
-                    <img className="absolute right-0 transform -translate-y-1/2 w-10 sm:w-20 z-10 rotate-180 cursor-pointer" style={{ top: '50%' }} src={NextButton} onClick={handleNext} />                </>
+                    <img className="absolute left-0 transform -translate-y-1/2 w-10 sm:w-20 z-10 cursor-pointer" style={{ top: '54%' }} src={NextButton} onClick={handlePrev} alt='' />
+                    <img className="absolute right-0 transform -translate-y-1/2 w-10 sm:w-20 z-10 rotate-180 cursor-pointer" style={{ top: '50%' }} src={NextButton} onClick={handleNext} alt='' />                </>
                   }
                   <div className="w-full sm:h-full h-[95%] bg-gray-300 flex items-center justify-center rounded-other sm:rounded-custom p-2">
-                    <img className="w-full h-full bg-black flex items-center justify-center rounded-other sm:rounded-custom " src={slide.content}/>
+                    <img className="w-full h-full bg-black flex items-center justify-center rounded-other sm:rounded-custom " src={slide.content} alt='' />
                       {/* <source className='w-full h-full' src={slide.content} /> */}
                     {/* </video> */}
                   </div>
@@ -63,7 +63,7 @@ const VideoCarousel = () => {
           </div>
         </div>
       </div>
-      <img className='flex-col items-center justify-center w-[70%] sm:w-[50%] my-10' src={Design} />
+      <img className='flex-col items-center justify-center w-[70%] sm:w-[50%] my-10' src={Design} alt='' />
     </div>
   );
 };

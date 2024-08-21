@@ -62,7 +62,7 @@ const TestimonialCarousel = () => {
           {items.map((item) => (
             <div key={item.id} className="w-[350px] m-4">
               <div className='w-full p-8 border border-gray-200 rounded-2xl flex flex-col items-center'>
-                <img className='w-[20%] ' src={MakingW4} />
+                <img className='w-[20%] ' src={MakingW4} alt='' />
                 <div className="font-bold text-md rounded-lg justify-center mb-1 mt-2">
                   Steven & Marry
                 </div>
@@ -78,7 +78,7 @@ const TestimonialCarousel = () => {
           {items.map((item) => (
             <div key={item.id} className="w-[350px] m-4">
               <div className='w-full p-8 border border-gray-200 rounded-2xl flex flex-col items-center'>
-                <img className='w-[20%] ' src={MakingW4} />
+                <img className='w-[20%] ' src={MakingW4} alt='' />
                 <div className="font-bold text-md rounded-lg justify-center mb-1 mt-2">
                   Steven & Marry
                 </div>
@@ -93,7 +93,7 @@ const TestimonialCarousel = () => {
           ))}
         </div>
       </div>
-      <img className='flex-col items-center justify-center w-[70%] sm:w-[50%] my-10' src={Design} />
+      <img className='flex-col items-center justify-center w-[70%] sm:w-[50%] my-10' src={Design} alt='' />
     </div>
   );
 };
