@@ -5,7 +5,7 @@ import { Facebook, Instagram, Linkedin, Tiktok, YouTube } from '../common/common
 const FollowUs = () => {
   return (
     <div className='flex align-middle flex-col items-center justify-center mt-4 h-full'>
-      <div className='sm:w-[40%] md:w-[55%] w-[75%] flex align-middle flex-col items-center justify-center'>
+      <div className='lg:w-[40%] w-[75%] flex align-middle flex-col items-center justify-center'>
         <Icon className='w-24 h-7 mb-2.5 mt-10' />
         <h1 className="text-2xl md:text-4xl font-semibold my-4">
           Follow Us on Social Media

@@ -6,7 +6,7 @@ const MakingWedding = () => {
   return (
     <div className='flex align-middle flex-col items-center justify-center mt-4'>
       <img className='flex-col items-center justify-center w-[70%] md:w-[55%] sm:w-[50%] my-10' src={Design} alt='' />
-      <div className='w-[60%] flex align-middle flex-col items-center justify-center mb-50'>
+      <div className='lg:w-[60%] w-[90%] flex align-middle flex-col items-center justify-center mb-50'>
         <Icon className='w-24 h-7 mb-2.5 mt-8' />
         <div className="text-2xl md:text-4xl font-semibold mt-4">
           Making Wedding
