@@ -15,7 +15,7 @@ const FeedBackCarousel = () => {
   useEffect(() => {
     slideIntervalRef.current = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % totalSlides);
-    }, 5000); // Change slide every 5 seconds
+    }, 10000); // Change slide every 10 seconds
 
     return () => {
       if (slideIntervalRef.current) {
@@ -26,13 +26,13 @@ const FeedBackCarousel = () => {
 
   return (
     <div className='sm:w-full w-[90%] max-w-2xl xl:max-w-6xl xl:mt-4 mx-auto'>
-      <h1 className="text-2xl md:text-4xl xl:text-5xl font-semibold mt-3 mb-3 whitespace-nowrap">
+      <h1 className="text-2xl md:text-4xl xl:text-5xl font-semibold mt-3 mb-5 whitespace-nowrap">
         Read what our couples are saying about weddings.io
       </h1>
       <div className="relative w-full overflow-hidden">
         <div className="relative mb-5 w-full flex items-center">
           <div
-            className="flex w-full transition-transform duration-[5000ms] ease-in-out"
+            className="flex w-full transition-transform duration-[5000ms] ease-in-out mb-5"
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
           >
             {testimonials.map((testimonial, index) => (
@@ -45,7 +45,7 @@ const FeedBackCarousel = () => {
                 }}
               >
                 <div className="flex w-full flex-col items-center justify-center sm:p-6 p-4 bg-white rounded-lg">
-                  <div className="flex items-center space-x-1">
+                  <div className="flex items-center space-x-1 mb-5">
                     {[1, 2, 3, 4, 5].map((star) => (
                       <svg
                         key={star}
