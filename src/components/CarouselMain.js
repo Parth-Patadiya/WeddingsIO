@@ -91,7 +91,7 @@ const CarouselMain = () => {
               Generate
             </button>
           </div> */}
-          <p className="sm:text-sm text-xs">NO CREDIT CARD REQUIRED</p>
+          <p className="sm:text-sm text-xs font-semibold">NO CREDIT CARD REQUIRED</p>
         </div>
       </div>
       <div className="absolute bottom-4 w-full flex justify-center space-x-2">
