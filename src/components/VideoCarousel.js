@@ -23,13 +23,13 @@ const VideoCarousel = () => {
   return (
     <div className='w-full flex flex-col align-middle justify-center items-center '>
       <Icon className='w-24 h-7 mb-2.5' />
-      <h1 className="text-2xl md:text-4xl font-semibold mt-3">
+      <h1 className="text-2xl md:text-4xl xl:text-6xl font-semibold mt-3">
         Wedding Planning AI?
       </h1>
-      <div className="text-sm text-gray-500 mt-5">
+      <div className="text-sm text-gray-500 xl:text-xl mt-5">
         Learn about the word's first wedding planning AI
       </div>
-      <div className="text-sm text-gray-500">
+      <div className="text-sm xl:text-xl text-gray-500">
         and how we are changing the wedding industry.
         </div>
       <div className="relative w-full h-[200px] sm:h-full overflow-hidden mt-11 ">
@@ -49,10 +49,10 @@ const VideoCarousel = () => {
                 >
                   {index === currentIndex && <>
 
-                    <img className="absolute left-0 transform -translate-y-1/2 w-10 sm:w-20 z-10 cursor-pointer" style={{ top: '54%' }} src={NextButton} onClick={handlePrev} alt='' />
-                    <img className="absolute right-0 transform -translate-y-1/2 w-10 sm:w-20 z-10 rotate-180 cursor-pointer" style={{ top: '50%' }} src={NextButton} onClick={handleNext} alt='' />                </>
+                    <img className="absolute left-[-25px] transform -translate-y-1/2 w-10 sm:w-20 z-10 cursor-pointer" style={{ top: '54%' }} src={NextButton} onClick={handlePrev} alt='' />
+                    <img className="absolute right-[-25px] transform -translate-y-1/2 w-10 sm:w-20 z-10 rotate-180 cursor-pointer" style={{ top: '50%' }} src={NextButton} onClick={handleNext} alt='' />                </>
                   }
-                  <div className="w-full sm:h-full h-[95%] bg-gray-300 flex items-center justify-center rounded-other sm:rounded-custom p-2">
+                  <div className="w-full sm:h-full h-[95%] bg-gray-200 flex items-center justify-center rounded-other sm:rounded-custom p-4">
                     <img className="w-full h-full bg-black flex items-center justify-center rounded-other sm:rounded-custom " src={slide.content} alt='' />
                       {/* <source className='w-full h-full' src={slide.content} /> */}
                     {/* </video> */}

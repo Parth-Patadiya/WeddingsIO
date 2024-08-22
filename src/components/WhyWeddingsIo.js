@@ -7,10 +7,10 @@ const WhyWeddingsIo = () => {
     <div className='flex align-middle flex-col items-center justify-center mt-4 h-full'>
       <div className='w-[80%] flex align-middle flex-col items-center justify-center'>
         <Icon className='w-24 h-7 mb-2.5 mt-10' />
-        <h1 className="text-2xl md:text-4xl font-semibold my-4">
+        <h1 className="text-2xl md:text-4xl lg:text-2xl xl:text-6xl font-semibold my-4">
           Why Weddings.IO?
         </h1>
-        <div className="text-sm text-gray-500 mb-10">
+        <div className="text-sm text-gray-500 xl:text-xl mb-10">
           Explore real weddings, real couples and see what our our customized tools can do for you.
         </div>
         <div className='flex w-full flex-col sm:flex-row  justify-between'>
