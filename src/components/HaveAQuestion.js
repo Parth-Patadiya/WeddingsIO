@@ -32,7 +32,7 @@ const HaveAQuestion = () => {
           <input type='text' className='border mb-3 bottom-1 rounded-lg w-full p-3block p-3 py-1.5 sm:text-sm sm:leading-6' placeholder='Your Email' />
           <textarea id="about" name="about" rows="4" placeholder='Your Message' class="block w-full p-3 rounded-lg border py-1.5 sm:text-sm sm:leading-6 resize-none"></textarea>
         <div className='flex h-15 w-full pt-8 justify-center align-middle'>
-          <button className="flex right-0 p-3 px-10 rounded-full bg-light text-light-500 border hover:bg-yellow-500 text-white font-semibold focus:outline-none border-light text-sm">
+          <button className="button-gradient flex right-0 p-3 px-10 rounded-full text-light-500 text-white font-semibold focus:outline-none text-sm">
             Send Message
           </button>
         </div>
