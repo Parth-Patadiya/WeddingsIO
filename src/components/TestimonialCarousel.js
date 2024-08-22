@@ -47,10 +47,10 @@ const TestimonialCarousel = () => {
     <div className='flex align-middle flex-col items-center justify-center mt-10 h-full'>
       <div className='w-[80%] flex align-middle flex-col items-center justify-center'>
         <Icon className='w-24 h-7 mb-2.5 mt-12' />
-        <h1 className="text-2xl md:text-4xl font-semibold my-4">
+        <h1 className="text-2xl md:text-4xl lg:text-2xl xl:text-6xl font-semibold my-4">
           What Our Couples Are Saying
         </h1>
-        <div className="text-sm text-gray-500 mb-2">
+        <div className="text-sm text-gray-500 xl:text-xl mb-5">
           Here is how wedding.io has helped create real weddings
         </div>
       </div>

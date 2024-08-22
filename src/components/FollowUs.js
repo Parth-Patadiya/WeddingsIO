@@ -7,11 +7,17 @@ const FollowUs = () => {
     <div className='flex align-middle flex-col items-center justify-center mt-4 h-full'>
       <div className='lg:w-[40%] w-[75%] flex align-middle flex-col items-center justify-center'>
         <Icon className='w-24 h-7 mb-2.5 mt-10' />
-        <h1 className="text-2xl md:text-4xl font-semibold my-4">
+        <h1 className="text-2xl md:text-4xl lg:text-2xl xl:text-6xl font-semibold my-4 whitespace-nowrap">
           Follow Us on Social Media
         </h1>
-        <div className="text-sm text-gray-500">
-          Stay connected with us for the latest wedding trends, inspiration, and tips! Follow Wedding.io on Facebook, Instagram, and Twitter to join our community of happy couples and industry experts.
+        <div className="text-sm text-gray-500 xl:text-xl leading-relaxed text-center px-4 md:px-6 lg:px-8 whitespace-nowrap">
+          Stay connected with us for the latest wedding trends, inspiration, and tips!
+        </div>
+        <div className="text-sm text-gray-500 xl:text-xl leading-relaxed text-center px-4 md:px-6 lg:px-8 whitespace-nowrap">
+          Follow Wedding.io on Facebook, Instagram, and Twitter to join our community of
+        </div>
+        <div className="text-sm text-gray-500 xl:text-xl leading-relaxed text-center px-4 md:px-6 lg:px-8">
+          happy couples and industry experts.
         </div>
 
         <div className='w-[87%] sm:w-full items-center justify-between my-10 flex  sm:justify-between md:flex-row lg:flex-row'>

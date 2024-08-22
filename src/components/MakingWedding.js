@@ -4,20 +4,20 @@ import { ReactComponent as Icon } from '../assets/Images/Stars.svg';
 
 const MakingWedding = () => {
   return (
-    <div className='flex align-middle flex-col items-center justify-center mt-4'>
+    <div className='flex align-middle flex-col items-center justify-center mt-4 h-full'>
       <img className='flex-col items-center justify-center w-[70%] md:w-[55%] sm:w-[50%] my-10' src={Design} alt='' />
-      <div className='lg:w-[60%] w-[90%] flex align-middle flex-col items-center justify-center mb-50'>
+      <div className='w-[80%] flex align-middle flex-col items-center justify-center'>
         <Icon className='w-24 h-7 mb-2.5 mt-8' />
-        <div className="text-2xl md:text-4xl font-semibold mt-4">
+        <div className="text-2xl md:text-4xl lg:text-2xl xl:text-6xl font-semibold mb-4">
           Making Wedding
         </div>
-        <div className="text-2xl md:text-4xl font-semibold mt-3 mb-5">
+        <div className="text-2xl md:text-4xl lg:text-2xl xl:text-6xl font-semibold mb-4">
           Planning FUN!
         </div>
-        <div className="text-sm text-gray-500">
+        <div className="text-sm text-gray-500 xl:text-xl">
           Our AI-powered platform streamlines planning, ensuring a
         </div>
-        <div className="text-sm text-gray-500 mb-10">
+        <div className="text-sm text-gray-500 xl:text-xl mb-10">
           memorable wedding celebration.
         </div>
       </div>

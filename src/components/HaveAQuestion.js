@@ -8,13 +8,13 @@ const HaveAQuestion = () => {
     <div className='flex align-middle flex-col items-center justify-center mt-4 h-full bg-gray-100'>
       <div className='lg:w-[40%] md:w-[85%] w-[75%] flex align-middle flex-col items-center justify-center'>
         <Icon className='w-24 h-7 mb-4 mt-10' />
-        <h1 className="text-2xl md:text-4xl font-semibold my-6">
+        <h1 className="text-2xl md:text-4xl lg:text-2xl xl:text-6xl font-semibold my-6">
           Have a question?
         </h1>
-        <div className="text-sm text-gray-500">
+        <div className="text-sm text-gray-500 xl:text-xl">
           Whether you have questions about our services, need technical
         </div>
-        <div className="text-sm text-gray-500 mb-8">
+        <div className="text-sm text-gray-500 xl:text-xl mb-8">
           support, or just want some advice, we're here for you.
         </div>
         <div className='w-[65%] items-center justify-between flex flex-col sm:flex-col md:flex-col lg:flex-row'>
