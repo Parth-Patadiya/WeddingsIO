@@ -15,7 +15,7 @@ const FeedBackCarousel = () => {
   useEffect(() => {
     slideIntervalRef.current = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % totalSlides);
-    }, 3000); // Change slide every 3 seconds
+    }, 5000); // Change slide every 5 seconds
 
     return () => {
       if (slideIntervalRef.current) {
@@ -26,16 +26,19 @@ const FeedBackCarousel = () => {
 
   return (
     <div className='sm:w-full w-[90%] max-w-2xl xl:max-w-6xl xl:mt-4 mx-auto'>
+      <h1 className="text-2xl md:text-4xl xl:text-5xl font-semibold mt-3 mb-3 whitespace-nowrap">
+        Read what our couples are saying about weddings.io
+      </h1>
       <div className="relative w-full overflow-hidden">
         <div className="relative mb-5 w-full flex items-center">
           <div
-            className="flex w-full transition-transform duration-1000 ease-in-out"
+            className="flex w-full transition-transform duration-[5000ms] ease-in-out"
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
           >
             {testimonials.map((testimonial, index) => (
               <div
                 key={testimonial.id}
-                className="flex-shrink-0 w-full px-4 transition-transform duration-500 ease-in-out"
+                className="flex-shrink-0 w-full px-4 transition-transform duration-1000 ease-in-out"
                 style={{
                   opacity: index === currentIndex ? 1 : 0.5,
                   transform: index === currentIndex ? 'scale(1.05)' : 'scale(0.95)',
