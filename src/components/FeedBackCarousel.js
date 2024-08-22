@@ -25,7 +25,7 @@ const FeedBackCarousel = () => {
   }, [totalSlides]);
 
   return (
-    <div className='sm:w-full w-[90%] max-w-2xl mx-auto'>
+    <div className='sm:w-full w-[90%] max-w-2xl xl:max-w-6xl xl:mt-4 mx-auto'>
       <div className="relative w-full overflow-hidden">
         <div className="relative mb-5 w-full flex items-center">
           <div
@@ -55,7 +55,7 @@ const FeedBackCarousel = () => {
                       </svg>
                     ))}
                   </div>
-                  <p className="sm:text-xl text-md text-gray-700 mt-4 italic">"{testimonial.text}"</p>
+                  <p className="sm:text-xl text-md xl:text-3xl text-gray-700 mt-4 italic">"{testimonial.text}"</p>
                   <p className="sm:text-lg text-sm text-gray-700 mt-4">{testimonial.name}</p>
                   <p className="sm:text-lg text-sm text-gray-400 ">{testimonial.company}</p>
                 </div>
