@@ -77,7 +77,7 @@ const FeedBackCarousel = () => {
         </div>
       </div>
       <div className='flex h-15 w-full p-8 justify-center align-middle'>
-        <button className="flex right-0 p-3 px-10 rounded-full bg-light text-light-500 border hover:bg-yellow-500 text-white font-semibold focus:outline-none border-light text-sm">
+        <button className="button-gradient flex right-0 p-3 px-10 rounded-full bg-light text-light-500 text-white font-semibold focus:outline-none text-sm">
           Start Planning Now!
         </button>
       </div>

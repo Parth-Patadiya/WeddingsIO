@@ -68,7 +68,7 @@ const MakingWedding = () => {
         <div className='text-xs text-white pt-3 font-semibold italic'>Launch July 1,2024</div>
         <div className='text-3xl text-white pt-4 font-semibold'>Sign Up For Early Access</div>
         <div className='flex h-15 w-full pt-8 justify-center align-middle'>
-          <button className="flex right-0 p-3 px-10 rounded-full bg-light text-light-500 border hover:bg-yellow-500 text-white font-semibold focus:outline-none border-light text-sm">
+          <button className="button-gradient flex right-0 p-3 px-10 rounded-full text-light-500 text-white font-semibold text-sm">
             Sign Up Now
           </button>
         </div>

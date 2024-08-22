@@ -25,7 +25,7 @@ const PlanWithEase = () => {
               Train your personal AI wedding planner with your wedding vision and get tailored suggestions to save time and money. Get custom vendor suggestions based on your location and budget. Generate tasks to track your wedding progress. Automate your RSVPs and so much more
             </div>
             <div className='flex h-15 w-full pt-10 justify-center sm:justify-start align-middle'>
-              <button className="flex right-0 p-3 px-10 rounded-full bg-light text-light-500 border hover:bg-yellow-500 text-white font-semibold focus:outline-none border-light text-sm">
+              <button className="button-gradient flex right-0 p-3 px-10 rounded-full text-light-500 text-white font-semibold text-sm">
                 Schedule a Demo
               </button>
             </div>

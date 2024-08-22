@@ -80,7 +80,7 @@ const CarouselMain = () => {
           <p className="mt-4 sm:text-lg text-sm whitespace-nowrap">
             Welcome to weddings.io, the AI-powered wedding planning platform designed to make your wedding planning simple.
           </p>
-          <button className="flex h-8  top-1/2 mr-2 pr-7 pl-4 pb-8 pt-2 sm:pt-3 my-6 rounded-full font-semibold bg-yellow-500 text-light-500 border hover:bg-yellow-500 hover:text-white focus:outline-none border-light text-sm" onClick={openModal}>
+          <button className="button-gradient flex h-8  top-1/2 mr-2 pr-7 pl-4 pb-8 pt-2 sm:pt-3 my-6 rounded-full font-semibold text-light-500 hover:text-white focus:outline-none text-sm" onClick={openModal}>
               <img className='w-4 mr-2 mt-0.5 ml-2 bg-transparent' alt='' src={HeroButtonImg} />
               Start Planning
             </button>

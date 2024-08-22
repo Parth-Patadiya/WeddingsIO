@@ -91,13 +91,13 @@ const Header = () => {
           <div className="text-sm font-semibold leading-6 ml-9 text-gray-600 w-44">
             Are You a Vendor?
           </div>
-          <button className="bg-light text-white font-bold py-1 px-3 w-28 rounded-full hover:bg-yellow-500 "
+          <button className="button-gradient text-white font-bold py-1 px-3 w-28 rounded-full"
           onClick={()=>navigate('/signIn')}
           >
             Log In
           </button>
           <button
-            className="bg-light text-white font-bold py-1 px-3 w-28 rounded-full hover:bg-yellow-500"
+            className="button-gradient text-white font-bold py-1 px-3 w-28 rounded-full"
             onClick={()=>navigate('/signUp')}
           >
             Sign Up
