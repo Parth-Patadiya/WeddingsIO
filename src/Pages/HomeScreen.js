@@ -2,8 +2,8 @@ import React from 'react'
 import CarouselMain from '../components/CarouselMain';
 import VideoCarousel from '../components/VideoCarousel';
 import LogoCarousel from '../components/LogoCarousel';
-import FeedBackCarousel from '../components/FeedBackCarousel';
 import WhyWeddingsIo from '../components/WhyWeddingsIo';
+import FeedBackCarousel from '../components/FeedBackCarousel';
 import PlanWithEase from '../components/PlanWithEase';
 import MakingWedding from '../components/MakingWedding';
 import TestimonialCarousel from '../components/TestimonialCarousel';
@@ -17,8 +17,8 @@ const HomeScreen = () => {
       <LogoCarousel />
       <VideoCarousel />
       <FeedBackCarousel />
-      <WhyWeddingsIo />
       <PlanWithEase />
+      <WhyWeddingsIo />
       <MakingWedding />
       <TestimonialCarousel />
       <HaveAQuestion />
