@@ -24,14 +24,14 @@ const VideoCarousel = () => {
     <div className='w-full flex flex-col align-middle justify-center items-center '>
       <Icon className='w-24 h-7 mb-2.5' />
       <h1 className="text-2xl md:text-4xl xl:text-6xl font-semibold mt-3">
-        Wedding Planning AI?
+        What is weddings.io?
       </h1>
       <div className="text-sm text-gray-500 xl:text-xl mt-5">
-        Learn about the word's first wedding planning AI
+        We are a one-stop-shop for couples and wedding vendors to plan, manage
       </div>
       <div className="text-sm xl:text-xl text-gray-500">
-        and how we are changing the wedding industry.
-        </div>
+        and and organize for the big wedding day
+      </div>
       <div className="relative w-full h-[200px] sm:h-full overflow-hidden mt-11 ">
         <div className="hidden sm:block absolute z-10 inset-y-0 left-0 w-[400px] bg-gradient-to-r from-white via-transparent to-transparent pointer-events-none"></div>
         <div className="absolute hidden sm:block  z-10 inset-y-0 right-0 w-[400px] bg-gradient-to-l from-white via-transparent to-transparent pointer-events-none"></div>
