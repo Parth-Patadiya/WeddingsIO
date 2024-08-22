@@ -75,13 +75,13 @@ const CarouselMain = () => {
       >
         <div className="relative z-10 w-[90%] sm:w-[66.666667%] flex flex-col items-center justify-center h-full text-center text-white px-4">
           <h2 className="sm:text-lg text-sm font-light italic">Your personal AI wedding planner</h2>
-          <h1 className="text-3xl md:text-6xl font-bold mt-2">Revolutionize Your Wedding Planning with AI</h1>
+          <h1 className="text-3xl md:text-6xl font-bold mt-2">Planning your wedding has never been easier</h1>
           <p className="mt-4 sm:text-lg text-sm">
-            Introducing weddings.io. The AI-powered wedding planner for a stress-free, organized and unforgettable wedding.
+            Welcome to weddings.io, the AI-powered wedding planning platform designed to make your wedding planning simple.
           </p>
           <button className="flex h-8  top-1/2 mr-2 pr-7 pl-4 pb-8 pt-2 sm:pt-3 my-6 rounded-full font-semibold bg-yellow-500 text-light-500 border hover:bg-yellow-500 hover:text-white focus:outline-none border-light text-sm" onClick={openModal}>
               <img className='w-4 mr-2 mt-0.5 ml-2 bg-transparent' alt='' src={HeroButtonImg} />
-              Stay In Touch
+              Start Planning
             </button>
           {/* <div className="relative w-[60%] mt-7 hidden sm:block">
             <input type="text" className="pl-5 w-full pr-20 py-4 border placeholder-white text-white rounded-full bg-black bg-opacity-30 focus:outline-none sm:pr-28 md:pr-32 lg:pr-40 border-gray-400" placeholder="Generate Your Wedding Plan" />
@@ -90,7 +90,7 @@ const CarouselMain = () => {
               Generate
             </button>
           </div> */}
-          <p className="sm:text-sm text-xs">No personal credit checks or founder guarantee.</p>
+          <p className="sm:text-sm text-xs">NO CREDIT CARD REQUIRED</p>
         </div>
       </div>
       <div className="absolute bottom-4 w-full flex justify-center space-x-2">
