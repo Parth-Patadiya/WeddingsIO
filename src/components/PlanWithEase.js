@@ -7,17 +7,14 @@ const PlanWithEase = () => {
     <div className='flex align-middle flex-col items-center justify-center mt-4'>
       <div className='lg:w-[80%] w-[90%] flex align-middle flex-col items-center justify-center mb-50'>
         <Icon className='w-24 h-7 mb-2.5 mt-10' />
-        <div className="text-2xl md:text-4xl font-semibold my-4">
+        <div className="text-2xl md:text-4xl xl:text-6xl font-semibold my-4">
           Features
         </div>
-        <div className="text-sm text-gray-500">
-          Let us automate those annoying tedious tasks so you can focus on what
+        <div className="text-sm text-gray-500 xl:text-xl mt-5">
+          Let us automate those annoying tedious tasks so you can focus on what matters most
         </div>
-        <div className="text-sm text-gray-500">
-          matters most. Experience curated realtinme results that give you a
-        </div>
-        <div className="text-sm text-gray-500 mb-10">
-          transparent and accurate expectation of your wedding day.
+        <div className="text-sm xl:text-xl text-gray-500 mb-10">
+          Experience curated realtinme results that give you a transparent and accurate expectation of your wedding day
         </div>
         <div className='flex lg:items-start items-end w-full bg-gray-100 lg:flex-row flex-col rounded-xl'>
           <div className='flex flex-col w-[75%] md:w-[87%] lg:w-[40%] justify-center text-start lg:m-10 m-10 mb-5'>
