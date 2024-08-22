@@ -8,13 +8,16 @@ const PlanWithEase = () => {
       <div className='lg:w-[80%] w-[90%] flex align-middle flex-col items-center justify-center mb-50'>
         <Icon className='w-24 h-7 mb-2.5 mt-10' />
         <div className="text-2xl md:text-4xl font-semibold my-4">
-          Plan with Ease
+          Features
         </div>
         <div className="text-sm text-gray-500">
-          Unlock the full potential of your wedding planning with our AI-driven
+          Let us automate those annoying tedious tasks so you can focus on what
+        </div>
+        <div className="text-sm text-gray-500">
+          matters most. Experience curated realtinme results that give you a
         </div>
         <div className="text-sm text-gray-500 mb-10">
-          platform. Enjoy a stress-free and delightful planning journey!
+          transparent and accurate expectation of your wedding day.
         </div>
         <div className='flex lg:items-start items-end w-full bg-gray-100 lg:flex-row flex-col rounded-xl'>
           <div className='flex flex-col w-[75%] md:w-[87%] lg:w-[40%] justify-center text-start lg:m-10 m-10 mb-5'>
@@ -22,7 +25,7 @@ const PlanWithEase = () => {
               AI Wedding Planner
             </div>
             <div className='text-gray-400'>
-              Develop your wedding vision in realtime with our AI wedding planner. Get custom vendor suggestions, scheduling, task management and details specific to your wedding vision.
+              Train your personal AI wedding planner with your wedding vision and get tailored suggestions to save time and money. Get custom vendor suggestions based on your location and budget. Generate tasks to track your wedding progress. Automate your RSVPs and so much more
             </div>
             <div className='flex h-15 w-full pt-10 justify-center sm:justify-start align-middle'>
               <button className="flex right-0 p-3 px-10 rounded-full bg-light text-light-500 border hover:bg-yellow-500 text-white font-semibold focus:outline-none border-light text-sm">
