@@ -34,7 +34,7 @@ const CarouselMain = () => {
               />
             </div>
             <div className="w-full flex justify-center">
-              <button className="flex px-10 py-2 rounded-full bg-yellow-500 text-light-500 border hover:bg-yellow-500 text-white focus:outline-none border-light text-sm">
+              <button className="button-gradient flex px-10 py-2 rounded-full text-light-500 text-white text-sm font-semibold">
                 Subscribe Now
               </button>
             </div>
