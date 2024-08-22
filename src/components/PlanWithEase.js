@@ -42,10 +42,10 @@ const PlanWithEase = () => {
       <div className='lg:w-[80%] w-[90%] h-[80%] flex flex-col sm:flex-row justify-between'>
         <div className='w-full sm:w-[49.5%] mt-2 bg-gray-100 rounded-xl flex flex-col justify-start pt-10 px-10'>
           <div className="font-bold text-xl text-start mb-4">
-            AI Vendor Matchmaking
+            Predictive Scheduler
           </div>
           <div className='text-gray-500 text-sm flex text-start mb-4'>
-          Use prompts to filter for only the most relevant wedding services based on your budget, location and unique wedding preferences. Let our AI find all the vendors for you while ensuring they meet your specific wedding criteria.
+            Create your wedding day schedule in minutes! Get the guidance from our database of wedding planners to perfectly create a wedding day intinerary, tailored perfectly to your prompts and requirements.
           </div>
           <div className='w-full flex mt-3 justify-between'>
             <div className='w-[49%]  bg-white p-4 rounded-lg'>
@@ -61,10 +61,10 @@ const PlanWithEase = () => {
         </div>
         <div className='w-full sm:w-[49.5%] mt-2 bg-gray-100 rounded-xl flex flex-col justify-start pt-10 px-10'>
           <div className="font-bold text-xl text-start mb-4">
-            Plan with Ease
+            AI Vendor Matchmaking
           </div>
           <div className='text-gray-500 text-sm flex text-start mb-4'>
-            Create your wedding day schedule in minutes! Get the guidance from our database of wedding planners to perfectly create a wedding day intinerary, tailored perfectly to your prompts and requirements.
+            Use prompts to filter for only the most relevant wedding services based on your budget, location and unique wedding preferences. Let our AI find all the vendors for you while ensuring they meet your specific wedding criteria.
           </div>
           <img className='mt-3 h-full' src={Bottom2} alt=''/>
         </div>
