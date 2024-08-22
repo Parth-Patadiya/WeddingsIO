@@ -30,7 +30,7 @@ ScrollToTop();
 
   return (
     <div className="w-full flex justify-center">
-      <div className="w-[85%] lg:w-[40%] rounded-3xl border-gray-300 border-[1px] flex flex-col justify-center md:my-40 my-16 py-14 md:px-10 px-5">
+      <div className="w-[85%] lg:w-[40%] xl:w-[20%] rounded-3xl border-gray-300 border-[1px] flex flex-col justify-center md:my-40 my-16 py-14 md:px-10 px-5">
         <p className="text-sm font-semibold text-gray-400 pb-4">
           Reset Password to weddings.io
         </p>
@@ -133,7 +133,7 @@ ScrollToTop();
         </form>
             <div className="w-full flex justify-center pt-10">
           <button
-            className="bg-light text-white font-bold md:py-4 py-3 md:px-16 px-5 w-[70%] rounded-full hover:bg-yellow-500"
+            className="bg-light text-white font-bold md:py-4 py-3 md:px-12 px-5 w-[70%] rounded-full hover:bg-yellow-500"
             onClick={() => navigate("/signIn")}
           >
             Change password

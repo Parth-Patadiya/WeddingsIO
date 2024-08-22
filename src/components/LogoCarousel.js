@@ -125,21 +125,21 @@ const LogoCarousel = () => {
                         </div>
                     </div>
                 ))}
-                {/* {items.map((item) => (
+                {items.map((item) => (
                     <div key={item.id + totalItems} className="min-w-1/3 p-10 flex justify-center items-center">
                         <div className="bg-white h-[52px] rounded-lg flex justify-center items-center">
                             <img className="w-[192px]" src={item.content} />
                         </div>
                     </div>
-                ))} */}
-                {/* {items.map((item) => (
+                ))} 
+                 {items.map((item) => (
                     <div key={item.id + totalItems * 2} className="min-w-1/3 p-10 flex justify-center items-center">
                         <div className="bg-white h-[52px] rounded-lg flex justify-center items-center">
                             <img className="w-[192px]" src={item.content}/>
                         </div>
                     </div>
                 ))}
-                {items.map((item) => (
+                {/* {items.map((item) => (
                     <div key={item.id + totalItems * 2} className="min-w-1/3 p-10 flex justify-center items-center">
                         <div className="bg-white h-[52px] rounded-lg flex justify-center items-center">
                             <img className="w-[192px]" src={item.content}/>

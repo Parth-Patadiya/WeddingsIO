@@ -2,26 +2,26 @@ import React, { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
 const Email = () => {
-    const navigate = useNavigate();
-    const ScrollToTop = () =>  {
-      const { pathname } = useLocation();
-  
-      useEffect(() => {
-          window.scrollTo(0, 0);
-      }, [pathname]);
-  
-      return null;
+  const navigate = useNavigate();
+  const ScrollToTop = () => {
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
+
+    return null;
   }
   ScrollToTop();
 
   return (
     <div className="w-full flex justify-center">
-      <div className="w-[85%] lg:w-[40%] rounded-3xl border-gray-300 border-[1px] flex flex-col justify-center md:my-40 my-16 py-14 md:px-10 px-5">
+      <div className="w-[85%] lg:w-[40%] xl:w-[25%] rounded-3xl border-gray-300 border-[1px] flex flex-col justify-center md:my-40 my-16 py-14 md:px-10 px-5">
         <p className="text-sm font-semibold text-gray-400 pb-4">
           Password assistance to weddings.io
         </p>
         <p className="md:text-3xl text-2xl  font-semibold ">
-          Hello, Email !
+          Welcome to weddings.io
         </p>
         <form className="flex justify-center">
           <div className="w-full pt-6">
@@ -41,16 +41,24 @@ const Email = () => {
                 />
               </div>
             </div>
-          <div className="w-full flex justify-center pt-10">
-          <button
-            className="bg-light text-white font-bold md:py-4 py-3 md:px-16 px-5 w-[70%] rounded-full hover:bg-yellow-500"
-            onClick={() => navigate("/forgotPassword")}
-          >
-            Send Link
-          </button>
-        </div>
+            <div className="w-full flex justify-center pt-10">
+              <button
+                className="bg-light text-white font-bold md:py-4 py-3 md:px-16 px-5 w-[70%] rounded-full hover:bg-yellow-500"
+                onClick={() => navigate("/forgotPassword")}
+              >
+                Continue
+              </button>
+            </div>
           </div>
         </form>
+        <div className='w-full flex py-10 justify-center'>
+          <p className='font-semibold text-start md:text-center flex md:text-md text-sm'>
+            Already have an account?
+          </p>
+          <a className='font-semibold flex ml-1 text-blue-900 justify-start md:text-md text-sm' href='/signIn'>
+            Sign In
+          </a>
+        </div>
       </div>
     </div>
   );

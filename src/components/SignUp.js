@@ -36,7 +36,7 @@ const SignUp = () => {
 
     return (
         <div className='w-full flex justify-center '>
-            <div className='w-[85%] lg:w-[40%] rounded-3xl border-gray-300 border-[1px] flex flex-col justify-center md:my-40 my-16 py-20 md:px-16 px-5'>
+            <div className='w-[85%] lg:w-[40%] xl:w-[30%] rounded-3xl border-gray-300 border-[1px] flex flex-col justify-center md:my-40 my-16 py-20 md:px-10 px-5'>
                 <p className='text-sm font-semibold text-gray-400 pb-2'>Sign up to weddings.io</p>
                 <p className='md:text-3xl text-2xl font-semibold '>Create your Account</p>
                 <form className="flex justify-center">
@@ -183,7 +183,7 @@ const SignUp = () => {
                         </div>
                     </div>
                 </form>
-                <label className='flex justify-start md:px-5 px-2 pb-2'>
+                {/* <label className='flex justify-start md:px-5 px-2 pb-2'>
                     <input
                         type="checkbox"
                         checked={isChecked}
@@ -193,7 +193,7 @@ const SignUp = () => {
                     <p className='text-gray-500 md:text-lg text-[0.60rem]'>
                         Remember me
                     </p>
-                </label>
+                </label> */}
                 <label className='flex justify-start md:px-5  px-2'>
                     <input
                         type="checkbox"
@@ -214,10 +214,10 @@ const SignUp = () => {
                     </button>
                 </div>
                 <div className='w-full flex pt-10 justify-center'>
-                    <p className='font-semibold text-start md:text-center flex md:text-lg text-xs'>
+                    <p className='font-semibold text-start md:text-center flex md:text-md text-sm'>
                         Already have an account?
                     </p>
-                    <a className='font-semibold flex ml-1 text-blue-900 justify-start md:text-lg text-xs' href='/signIn'>
+                    <a className='font-semibold flex ml-1 text-blue-900 justify-start md:text-md text-sm' href='/signIn'>
                         Sign In
                     </a>
                 </div>
