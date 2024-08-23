@@ -64,10 +64,10 @@ const MakingWedding = () => {
           </div>
         </div>
       </div>
-      <div className="relative rounded-2xl mt-12 w-[80%] h-52 bg-center bg-cover bg-no-repeat flex flex-col items-center justify-center" style={{ backgroundImage: `url(${BottomFrame})` }}>
+      <div className="relative rounded-2xl mt-12 w-[80%] sm:h-52 h-40 bg-center bg-cover bg-no-repeat flex flex-col items-center justify-center" style={{ backgroundImage: `url(${BottomFrame})` }}>
         <div className='text-xs text-white pt-3 font-semibold italic'>Launch July 1,2024</div>
-        <div className='text-3xl text-white pt-4 font-semibold'>Sign Up For Early Access</div>
-        <div className='flex h-15 w-full pt-8 justify-center align-middle'>
+        <div className='sm:text-3xl text-xl text-white pt-4 font-semibold'>Sign Up For Early Access</div>
+        <div className='flex h-15 w-full sm:pt-8 pt-4 justify-center align-middle'>
           <button className="button-gradient flex right-0 p-3 px-10 rounded-full text-light-500 text-white font-semibold text-sm">
             Sign Up Now
           </button>
