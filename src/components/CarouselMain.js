@@ -68,7 +68,7 @@ const CarouselMain = () => {
   }, [images.length]);
 
   return (
-    <div className="relative w-full h-screen">
+    <div className="relative w-full sm:h-[90vh] h-[50vh]">
       <div
         className="absolute flex justify-center w-full h-full bg-cover bg-center transition-all duration-1000"
         style={{ backgroundImage: `url(${images[currentIndex]})` }}
@@ -77,7 +77,7 @@ const CarouselMain = () => {
           <h2 className="sm:text-lg text-sm font-light italic">Your personal AI wedding planner</h2>
           <h1 className="text-3xl md:text-6xl font-bold mt-2">Planning your wedding has</h1>
           <h1 className="text-3xl md:text-6xl font-bold mt-2">never been easier</h1>
-          <p className="mt-4 sm:text-lg text-sm whitespace-nowrap">
+          <p className="mt-4 sm:text-lg text-sm">
             Welcome to weddings.io, the AI-powered wedding planning platform designed to make your wedding planning simple.
           </p>
           <button className="button-gradient flex h-8  top-1/2 mr-2 pr-7 pl-4 pb-8 pt-2 sm:pt-3 my-6 rounded-full font-semibold text-light-500 hover:text-white focus:outline-none text-sm" onClick={openModal}>

@@ -26,7 +26,7 @@ const FeedBackCarousel = () => {
 
   return (
     <div className='sm:w-full w-[90%] max-w-2xl xl:max-w-6xl xl:mt-4 mx-auto'>
-      <h1 className="text-2xl md:text-4xl xl:text-5xl font-semibold mt-3 mb-5 whitespace-nowrap">
+      <h1 className="text-2xl md:text-4xl xl:text-5xl font-semibold mt-3 mb-5">
         Read what our couples are saying about weddings.io
       </h1>
       <div className="relative w-full overflow-hidden">
