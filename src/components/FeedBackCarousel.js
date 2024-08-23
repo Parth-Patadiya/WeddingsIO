@@ -8,13 +8,33 @@ const FeedBackCarousel = () => {
     { id: 4, name: "Vannly", company: "Happily Married", text: "Paul is obsessed with AI anything. This is very cool. I would have loved a tool that helped with finding vendors. I’ll mention this in the review. Authenticity and reliability are such hard things to find too", rating: 4 },
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(1); // Start from the first real slide
   const totalSlides = testimonials.length;
+  const slides = [
+    testimonials[totalSlides - 1], // Clone of last slide
+    ...testimonials,
+    testimonials[0], // Clone of first slide
+  ];
+  
+  const slideRef = useRef(null);
   const slideIntervalRef = useRef(null);
+  const [isTransitioning, setIsTransitioning] = useState(false);
+
+  const handleNext = () => {
+    if (isTransitioning) return;
+    setIsTransitioning(true);
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
+  };
+
+  const handlePrev = () => {
+    if (isTransitioning) return;
+    setIsTransitioning(true);
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + slides.length) % slides.length);
+  };
 
   useEffect(() => {
     slideIntervalRef.current = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % totalSlides);
+      handleNext();
     }, 10000); // Change slide every 10 seconds
 
     return () => {
@@ -24,6 +44,22 @@ const FeedBackCarousel = () => {
     };
   }, [totalSlides]);
 
+  useEffect(() => {
+    const handleTransitionEnd = () => {
+      if (currentIndex === 0) {
+        setCurrentIndex(totalSlides); // Jump to last real slide instantly
+      } else if (currentIndex === slides.length - 1) {
+        setCurrentIndex(1); // Jump to first real slide instantly
+      }
+      setIsTransitioning(false);
+    };
+
+    slideRef.current.addEventListener('transitionend', handleTransitionEnd);
+    return () => {
+      slideRef.current.removeEventListener('transitionend', handleTransitionEnd);
+    };
+  }, [currentIndex, slides.length]);
+
   return (
     <div className='sm:w-full w-[90%] max-w-2xl xl:max-w-6xl xl:mt-4 mx-auto'>
       <h1 className="text-2xl md:text-4xl xl:text-5xl font-semibold mt-3 mb-5">
@@ -32,10 +68,11 @@ const FeedBackCarousel = () => {
       <div className="relative w-full overflow-hidden">
         <div className="relative mb-5 w-full flex items-center">
           <div
-            className="flex w-full transition-transform duration-[5000ms] ease-in-out mb-5"
+            className={`flex w-full transition-transform duration-500 ease-in-out ${isTransitioning ? '' : 'transition-none'}`}
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+            ref={slideRef}
           >
-            {testimonials.map((testimonial, index) => (
+            {slides.map((testimonial, index) => (
               <div
                 key={testimonial.id}
                 className="flex-shrink-0 w-full px-4 transition-transform duration-1000 ease-in-out"
@@ -60,7 +97,7 @@ const FeedBackCarousel = () => {
                   </div>
                   <p className="sm:text-xl text-md xl:text-3xl text-gray-700 mt-4 italic">"{testimonial.text}"</p>
                   <p className="sm:text-lg text-sm text-gray-700 mt-4">{testimonial.name}</p>
-                  <p className="sm:text-lg text-sm text-gray-400 ">{testimonial.company}</p>
+                  <p className="sm:text-lg text-sm text-gray-400">{testimonial.company}</p>
                 </div>
               </div>
             ))}
@@ -71,13 +108,13 @@ const FeedBackCarousel = () => {
           {testimonials.map((_, index) => (
             <div
               key={index}
-              className={`w-2 h-2 rounded-full ${index === currentIndex ? 'bg-gray-800' : 'bg-gray-400'}`}
+              className={`w-2 h-2 rounded-full ${index === (currentIndex - 1 + totalSlides) % totalSlides ? 'bg-gray-800' : 'bg-gray-400'}`}
             />
           ))}
         </div>
       </div>
       <div className='flex h-15 w-full p-8 justify-center align-middle'>
-        <button className="button-gradient flex right-0 p-3 px-10 rounded-full bg-light text-light-500 text-white font-semibold focus:outline-none text-sm">
+        <button className="button-gradient flex p-3 px-10 rounded-full bg-light text-light-500 text-white font-semibold focus:outline-none text-sm">
           Start Planning Now!
         </button>
       </div>
