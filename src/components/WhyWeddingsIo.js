@@ -11,7 +11,7 @@ const WhyWeddingsIo = () => {
           Why Weddings.IO?
         </h1>
         <div className="text-sm text-gray-500 xl:text-xl mb-10">
-          Explore real weddings, real couples and see what our our customized tools can do for you.
+          Read real wedding use-cases of why we created weddings.io
         </div>
         <div className='flex w-full flex-col sm:flex-row  justify-between'>
           <div className='sm:w-[32.5%] mb-3 sm:mb-0 w-full p-3 border border-1 border-gray-200 rounded-lg'>

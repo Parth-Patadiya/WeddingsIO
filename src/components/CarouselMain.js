@@ -74,7 +74,7 @@ const CarouselMain = () => {
         style={{ backgroundImage: `url(${images[currentIndex]})` }}
       >
         <div className="relative z-10 w-[90%] sm:w-[66.666667%] flex flex-col items-center justify-center h-full text-center text-white px-4">
-          <h2 className="sm:text-lg text-sm font-light italic">Your personal AI wedding planner</h2>
+          <h2 className="sm:text-lg md:text-2xl font-light italic">Your personal AI wedding planner</h2>
           <h1 className="text-3xl md:text-6xl font-bold mt-2">Planning your wedding has</h1>
           <h1 className="text-3xl md:text-6xl font-bold mt-2">never been easier</h1>
           <p className="mt-4 sm:text-lg text-sm">

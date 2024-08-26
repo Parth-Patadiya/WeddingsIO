@@ -64,7 +64,7 @@ ScrollToTop();
 
             <div className="w-full flex justify-center pt-10">
           <button
-            className="bg-light text-white font-bold md:py-4 py-3 md:px-16 px-5 w-[70%] rounded-full hover:bg-yellow-500"
+            className="button-gradient text-white font-bold md:py-4 py-3 md:px-16 px-5 w-[70%] rounded-full"
             onClick={() => navigate("/")}
           >
             Verify

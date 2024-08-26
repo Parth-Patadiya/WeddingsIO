@@ -11,18 +11,18 @@ const PlanWithEase = () => {
           Features
         </div>
         <div className="text-sm text-gray-500 xl:text-xl mt-5">
-          Let us automate those annoying tedious tasks so you can focus on what matters most
+          Let us automate those annoying tedious tasks so you can focus on what matters most.
         </div>
         <div className="text-sm xl:text-xl text-gray-500 mb-10">
-          Experience curated realtinme results that give you a transparent and accurate expectation of your wedding day
+          Experience curated realtime results that give you a transparent and accurate expectation of your wedding day.
         </div>
         <div className='flex lg:items-start items-end w-full bg-gray-100 lg:flex-row flex-col rounded-xl'>
           <div className='flex flex-col w-[75%] md:w-[87%] lg:w-[40%] justify-center text-start lg:m-10 m-10 mb-5'>
             <div className='font-bold text-xl w-full mb-4'>
               AI Wedding Planner
             </div>
-            <div className='text-gray-400'>
-              Train your personal AI wedding planner with your wedding vision and get tailored suggestions to save time and money. Get custom vendor suggestions based on your location and budget. Generate tasks to track your wedding progress. Automate your RSVPs and so much more
+            <div>
+              Train your personal AI wedding planner with your wedding vision and get tailored suggestions to save time and money. Get custom vendor suggestions based on your location and budget. Generate tasks to track your wedding progress. Automate your RSVPs and so much more.
             </div>
             <div className='flex h-15 w-full pt-10 justify-center sm:justify-start align-middle'>
               <button className="button-gradient flex right-0 p-3 px-10 rounded-full text-light-500 text-white font-semibold text-sm">
@@ -41,16 +41,16 @@ const PlanWithEase = () => {
           <div className="font-bold text-xl text-start mb-4">
             Predictive Scheduler
           </div>
-          <div className='text-gray-500 text-sm flex text-start mb-4'>
-            Create your wedding day schedule in minutes! Get the guidance from our database of wedding planners to perfectly create a wedding day intinerary, tailored perfectly to your prompts and requirements.
+          <div className='text-sm flex text-start mb-4'>
+            Give us your ideal times for the most important parts of your wedding and generate a suggested schedule tailored to your needs! Test dozens of different ideas in realtime to create the perfect itinerary for your wedding day.
           </div>
           <div className='w-full flex mt-3 justify-between'>
             <div className='w-[49%]  bg-white p-4 rounded-lg'>
-              <div className='text-xs text-gray-500 text-start leading-normal' >Wedding Day Schedule</div>
+              <div className='text-xs text-start leading-normal' >Wedding Day Schedule</div>
               <div className='text-sm text-start leading-normal' >Wedding Party</div>
             </div>
             <div className='w-[49%] bg-white p-4 rounded-lg'>
-              <div className='text-xs text-gray-500 text-start leading-normal' >Start Time</div>
+              <div className='text-xs text-start leading-normal' >Start Time</div>
               <div className='text-sm text-start leading-normal' >10:00 AM - 13:00 AM</div>
             </div>
           </div>
@@ -58,10 +58,10 @@ const PlanWithEase = () => {
         </div>
         <div className='w-full sm:w-[49.5%] mt-2 bg-gray-100 rounded-xl flex flex-col justify-start pt-10 px-10'>
           <div className="font-bold text-xl text-start mb-4">
-            AI Vendor Matchmaking
+            AI Budget Tracker
           </div>
-          <div className='text-gray-500 text-sm flex text-start mb-4'>
-            Use prompts to filter for only the most relevant wedding services based on your budget, location and unique wedding preferences. Let our AI find all the vendors for you while ensuring they meet your specific wedding criteria.
+          <div className='text-sm flex text-start mb-4'>
+            Upload contracts, invoices and receipts and have them all tracked on one platform. Get suggestions on how to best manage your remaining budget and share reports easily with your partner or planner.
           </div>
           <img className='mt-3 h-full' src={Bottom2} alt=''/>
         </div>
