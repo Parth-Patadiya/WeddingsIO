@@ -46,7 +46,7 @@ const Email = () => {
                 className="button-gradient bg-light text-white font-bold md:py-4 py-3 md:px-16 px-5 w-[70%] rounded-full"
                 onClick={() => navigate("/forgotPassword")}
               >
-                Send OTP to email
+                Send OTP
               </button>
             </div>
           </div>
