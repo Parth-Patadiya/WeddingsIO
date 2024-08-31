@@ -4,7 +4,7 @@ import { Bottom1, Bottom2, FirstBack, SecondFront } from '../common/commonImport
 
 const PlanWithEase = () => {
   return (
-    <div className='flex align-middle flex-col items-center justify-center mt-4'>
+    <div className='flex align-middle flex-col items-center justify-center mt-4' id="Features">
       <div className='lg:w-[80%] w-[90%] flex align-middle flex-col items-center justify-center mb-50'>
         <Icon className='w-24 h-7 mb-2.5 mt-10' />
         <div className="text-2xl md:text-4xl xl:text-6xl font-semibold my-4">

@@ -4,6 +4,7 @@ import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useNavigate } from "react-router-dom";
 import { ReactComponent as HomeLogo } from '../assets/Images/Logos/LogoHome.svg';
+import { HashLink as Link } from 'react-router-hash-link';
 const Header = () => {
   // const [isModalOpen, setIsModalOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -31,17 +32,17 @@ const Header = () => {
           </a>
         </div>
         <div className="flex lg:hidden">
-          <button
-            type="button"
+          <Link
+            // type="button"
             onClick={() => setMobileMenuOpen(true)}
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
           >
             <span className="sr-only">Open main menu</span>
             <Bars3Icon aria-hidden="true" className="h-6 w-6" />
-          </button>
+          </Link>
         </div>
         <div className="hidden lg:flex lg:gap-x-6 justify-end">
-          <button
+          <Link
             className={`${activePage === "home"
                 ? "text-sm font-semibold leading-6 text-black p-1 border-b-2 border-light"
                 : "text-sm font-semibold leading-6 p-1 text-gray-600"
@@ -49,8 +50,8 @@ const Header = () => {
             onClick={home}
           >
             Home
-          </button>
-          <button
+          </Link>
+          <Link
             className={`${activePage === "about us"
                 ? "text-sm font-semibold leading-6 text-black p-1 border-b-2 border-light"
                 : "text-sm font-semibold leading-6 p-1 text-gray-600"
@@ -58,8 +59,8 @@ const Header = () => {
             onClick={() => setActivePage("about us")}
           >
             About Us
-          </button>
-          <button
+          </Link>
+          <Link smooth to="#Features"
             className={`${activePage === "features"
                 ? "text-sm font-semibold leading-6 text-black p-1 border-b-2 border-light"
                 : "text-sm font-semibold leading-6 p-1 text-gray-600"
@@ -67,8 +68,8 @@ const Header = () => {
             onClick={() => setActivePage("features")}
           >
             Features
-          </button>
-          <button
+          </Link>
+          <Link
             className={`${activePage === "resources"
                 ? "text-sm font-semibold leading-6 text-black p-1 border-b-2 border-light"
                 : "text-sm font-semibold leading-6 p-1 text-gray-600"
@@ -76,8 +77,8 @@ const Header = () => {
             onClick={() => setActivePage("resources")}
           >
             Resources
-          </button>
-          <button
+          </Link>
+          <Link
             className={`${activePage === "contact us"
                 ? "text-sm font-semibold leading-6 text-black p-1 border-b-2 border-light"
                 : "text-sm font-semibold leading-6 p-1 text-gray-600"
@@ -85,23 +86,23 @@ const Header = () => {
             onClick={() => setActivePage("contact us")}
           >
             Contact Us
-          </button>
+          </Link>
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-5 ml-10 flex items-center">
           <div className="text-sm font-semibold leading-6 ml-9 text-gray-600 w-44">
             Are You a Vendor?
           </div>
-          <button className="button-gradient text-white font-bold py-1 px-3 w-28 rounded-full"
+          <Link className="button-gradient text-white font-bold py-1 px-3 w-28 rounded-full"
           onClick={()=>navigate('/signIn')}
           >
             Log In
-          </button>
-          <button
+          </Link>
+          <Link
             className="button-gradient text-white font-bold py-1 px-3 w-28 rounded-full"
             onClick={()=>navigate('/signUp')}
           >
             Sign Up
-          </button>
+          </Link>
         </div>
       </nav>
       {/* <SignupModal isOpen={isModalOpen} onClose={closeModal} /> */}
@@ -113,54 +114,55 @@ const Header = () => {
               <span className="sr-only">Your Company</span>
               <img alt="" src={HomeLogo} className="h-8 w-auto" />
             </a>
-            <button
-              type="button"
+            <Link
+              // type="button"
               onClick={() => setMobileMenuOpen(false)}
               className="-m-2.5 rounded-md p-2.5 text-gray-700"
             >
               <span className="sr-only">Close menu</span>
               <XMarkIcon aria-hidden="true" className="h-6 w-6" />
-            </button>
+            </Link>
           </div>
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-                <a
-                  href="/"
+                <Link
+                  onClick={()=>setMobileMenuOpen(false)}
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Home
-                </a>
-                <a
-                  href="/"
+                </Link>
+                <Link
+                  onClick={()=>setMobileMenuOpen(false)}
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   About Us
-                </a>
-                <a
-                  href="/"
+                </Link>
+                <Link
+                  smooth to="#Features"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  onClick={()=>setMobileMenuOpen(false)}
                 >
                   Features
-                </a>
-                <a
-                  href="/"
+                </Link>
+                <Link
+                  onClick={()=>setMobileMenuOpen(false)}
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Resources
-                </a>
-                <a
-                  href="/"
+                </Link>
+                <Link
+                  onClick={()=>setMobileMenuOpen(false)}
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Contact Us
-                </a>
-                <a
-                  href="/"
+                </Link>
+                <Link
+                  onClick={()=>setMobileMenuOpen(false)}
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Are You a Vendor?
-                </a>
+                </Link>
               </div>
               <div className="py-6">
                 <p
