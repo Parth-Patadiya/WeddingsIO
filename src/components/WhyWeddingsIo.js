@@ -4,11 +4,11 @@ import { Ww1, Ww2, Ww3, Ww4 } from '../common/commonImport';
 
 const WhyWeddingsIo = () => {
   return (
-    <div className='flex align-middle flex-col items-center justify-center mt-4 h-full'>
+    <div className='flex align-middle flex-col items-center justify-center mt-4 h-full' id='Resources'>
       <div className='w-[80%] flex align-middle flex-col items-center justify-center'>
         <Icon className='w-24 h-7 mb-2.5 mt-10' />
         <h1 className="text-2xl md:text-4xl lg:text-2xl xl:text-6xl font-semibold my-4">
-          Why Weddings.IO?
+          Why weddings.io?
         </h1>
         <div className="text-sm text-gray-500 xl:text-xl mb-10">
           Read real wedding use-cases of why we created weddings.io
