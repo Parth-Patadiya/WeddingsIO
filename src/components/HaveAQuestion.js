@@ -20,7 +20,7 @@ const HaveAQuestion = () => {
         <div className='w-[65%] items-center justify-between flex flex-col sm:flex-col md:flex-col lg:flex-row'>
           <div className='flex justify-start w-fit items-center mb-2'>
             <Mail className='w-4 mr-2' />
-            <div className='text-sm'>support@wedding.io</div>
+            <div className='text-sm'>support@weddings.io</div>
           </div>
           <div className='flex justify-end w-fit mb-2'>
             <Phone className='w-4 mr-2' />

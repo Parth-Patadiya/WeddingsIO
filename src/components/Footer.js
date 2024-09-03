@@ -39,7 +39,7 @@ const Footer = () => {
           <div className='lg:w-[60%] w-full flex flex-col space-y-2 lg:items-start items-center'>
             <div className='flex items-center lg:mb-0 mb-4'>
               <Mail className='w-4 mr-3' />
-              <div className='lg:text-xs text-lg font-semibold'>support@wedding.io</div>
+              <div className='lg:text-xs text-lg font-semibold'>support@weddings.io</div>
             </div>
             <div className='flex items-center'>
               <Phone className='sm:w-4 w-5 h-4 mr-2' />

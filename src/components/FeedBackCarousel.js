@@ -1,4 +1,5 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React from 'react';
+import Slider from 'react-slick';
 
 const FeedBackCarousel = () => {
   const testimonials = [
@@ -8,57 +9,21 @@ const FeedBackCarousel = () => {
     { id: 4, name: "Vannly", company: "Happily Married", text: "Paul is obsessed with AI anything. This is very cool. I would have loved a tool that helped with finding vendors. I’ll mention this in the review. Authenticity and reliability are such hard things to find too", rating: 4 },
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(1); // Start from the first real slide
-  const totalSlides = testimonials.length;
-  const slides = [
-    testimonials[totalSlides - 1], // Clone of last slide
-    ...testimonials,
-    testimonials[0], // Clone of first slide
-  ];
-  
-  const slideRef = useRef(null);
-  const slideIntervalRef = useRef(null);
-  const [isTransitioning, setIsTransitioning] = useState(false);
-
-  const handleNext = () => {
-    if (isTransitioning) return;
-    setIsTransitioning(true);
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 10000,
+    arrows: true,
+    appendDots: dots => (
+      <div style={{ position: 'absolute', bottom: '1px', left: '50%', transform: 'translateX(-50%)' }}>
+        <ul style={{ margin: '0px' }}> {dots} </ul>
+      </div>
+    ),
   };
-
-  const handlePrev = () => {
-    if (isTransitioning) return;
-    setIsTransitioning(true);
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + slides.length) % slides.length);
-  };
-
-  useEffect(() => {
-    slideIntervalRef.current = setInterval(() => {
-      handleNext();
-    }, 10000); // Change slide every 10 seconds
-
-    return () => {
-      if (slideIntervalRef.current) {
-        clearInterval(slideIntervalRef.current);
-      }
-    };
-  }, [totalSlides]);
-
-  useEffect(() => {
-    const handleTransitionEnd = () => {
-      if (currentIndex === 0) {
-        setCurrentIndex(totalSlides); // Jump to last real slide instantly
-      } else if (currentIndex === slides.length - 1) {
-        setCurrentIndex(1); // Jump to first real slide instantly
-      }
-      setIsTransitioning(false);
-    };
-
-    slideRef.current.addEventListener('transitionend', handleTransitionEnd);
-    return () => {
-      slideRef.current.removeEventListener('transitionend', handleTransitionEnd);
-    };
-  }, [currentIndex, slides.length]);
 
   return (
     <div className='sm:w-full w-[90%] max-w-2xl xl:max-w-6xl xl:mt-4 mx-auto'>
@@ -66,52 +31,28 @@ const FeedBackCarousel = () => {
         Read what our couples are saying about weddings.io
       </h1>
       <div className="relative w-full overflow-hidden">
-        <div className="relative mb-5 w-full flex items-center">
-          <div
-            className={`flex w-full transition-transform duration-500 ease-in-out ${isTransitioning ? '' : 'transition-none'}`}
-            style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-            ref={slideRef}
-          >
-            {slides.map((testimonial, index) => (
-              <div
-                key={testimonial.id}
-                className="flex-shrink-0 w-full px-4 transition-transform duration-1000 ease-in-out"
-                style={{
-                  opacity: index === currentIndex ? 1 : 0.5,
-                  transform: index === currentIndex ? 'scale(1.05)' : 'scale(0.95)',
-                }}
-              >
-                <div className="flex w-full flex-col items-center justify-center sm:p-6 p-4 bg-white rounded-lg">
-                  <div className="flex items-center space-x-1 mb-5">
-                    {[1, 2, 3, 4, 5].map((star) => (
-                      <svg
-                        key={star}
-                        className={`w-3 h-3 ${star <= testimonial.rating ? 'text-yellow-400' : 'text-gray-300'}`}
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21z" />
-                      </svg>
-                    ))}
-                  </div>
-                  <p className="sm:text-xl text-md xl:text-3xl text-gray-700 mt-4 italic">"{testimonial.text}"</p>
-                  <p className="sm:text-lg text-sm text-gray-700 mt-4">{testimonial.name}</p>
-                  <p className="sm:text-lg text-sm text-gray-400">{testimonial.company}</p>
-                </div>
+        <Slider {...settings}>
+          {testimonials.map((testimonial) => (
+            <div key={testimonial.id} className="flex flex-col items-center justify-center p-4 bg-white rounded-lg">
+              <div className="flex w-full justify-center space-x-1 mb-5">
+                {[1, 2, 3, 4, 5].map((star) => (
+                  <svg
+                    key={star}
+                    className={`w-3 h-3 ${star <= testimonial.rating ? 'text-yellow-400' : 'text-gray-300'}`}
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21z" />
+                  </svg>
+                ))}
               </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-          {testimonials.map((_, index) => (
-            <div
-              key={index}
-              className={`w-2 h-2 rounded-full ${index === (currentIndex - 1 + totalSlides) % totalSlides ? 'bg-gray-800' : 'bg-gray-400'}`}
-            />
+              <p className="sm:text-xl text-md xl:text-3xl text-gray-700 mt-4 italic">"{testimonial.text}"</p>
+              <p className="sm:text-lg text-sm text-gray-700 mt-4">{testimonial.name}</p>
+              <p className="sm:text-lg text-sm text-gray-400">{testimonial.company}</p>
+            </div>
           ))}
-        </div>
+        </Slider>
       </div>
       <div className='flex h-15 w-full p-8 justify-center align-middle'>
         <button className="button-gradient flex p-3 px-10 rounded-full bg-light text-light-500 text-white font-semibold focus:outline-none text-sm">
