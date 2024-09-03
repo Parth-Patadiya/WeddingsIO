@@ -95,17 +95,13 @@ const Header = () => {
           <div className="text-sm font-semibold leading-6 ml-9 text-gray-600 w-44">
             Are You a Vendor?
           </div>
-          <button className="button-gradient text-white font-bold py-1 px-3 w-28 rounded-full"
-            onClick={handleSignIn}
-          >
+          <a href="/signIn" className="button-gradient text-white font-bold py-1 px-3 w-28 rounded-full">
             Log In
-          </button>
-          <button
-            className="button-gradient text-white font-bold py-1 px-3 w-28 rounded-full"
-            onClick={handleSignUp}
-          >
+          </a>
+          <a href="/signUp"
+            className="button-gradient text-white font-bold py-1 px-3 w-28 rounded-full">
             Sign Up
-          </button>
+          </a>
         </div>
       </nav>
 
