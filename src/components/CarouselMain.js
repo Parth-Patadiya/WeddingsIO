@@ -68,7 +68,7 @@ const CarouselMain = () => {
   }, [images.length]);
 
   return (
-    <div className="relative w-full sm:h-[90vh] h-[60vh]">
+    <div className="relative w-full sm:h-[90vh] h-[60vh]" id="Home">
       <div
         className="absolute flex justify-center w-full h-full bg-cover bg-center transition-all duration-1000"
         style={{ backgroundImage: `url(${images[currentIndex]})` }}

@@ -5,7 +5,7 @@ import { ReactComponent as Phone } from '../assets/Images/HaveAQuestion/Phone.sv
 
 const HaveAQuestion = () => {
   return (
-    <div className='flex align-middle flex-col items-center justify-center mt-4 h-full bg-gray-100'>
+    <div className='flex align-middle flex-col items-center justify-center mt-4 h-full bg-gray-100' id="ContactUs">
       <div className='lg:w-[40%] md:w-[65%] w-[75%] flex align-middle flex-col items-center justify-center'>
         <Icon className='w-24 h-7 mb-4 mt-10' />
         <h1 className="text-2xl md:text-4xl lg:text-2xl xl:text-6xl font-semibold my-6">
@@ -30,7 +30,7 @@ const HaveAQuestion = () => {
         <div className='flex flex-col w-full justify-between my-10'>
           <input type='text' className='border mb-3 bottom-1 rounded-lg w-full p-3block p-3  py-1.5 sm:text-sm sm:leading-6' placeholder='Your Name' />
           <input type='text' className='border mb-3 bottom-1 rounded-lg w-full p-3block p-3 py-1.5 sm:text-sm sm:leading-6' placeholder='Your Email' />
-          <textarea id="about" name="about" rows="4" placeholder='Your Message' class="block w-full p-3 rounded-lg border py-1.5 sm:text-sm sm:leading-6 resize-none"></textarea>
+          <textarea id="about" name="about" rows="4" placeholder='Your Message' className="block w-full p-3 rounded-lg border py-1.5 sm:text-sm sm:leading-6 resize-none"></textarea>
         <div className='flex h-15 w-full pt-8 justify-center align-middle'>
           <button className="button-gradient flex right-0 p-3 px-10 rounded-full text-light-500 text-white font-semibold focus:outline-none text-sm">
             Send Message

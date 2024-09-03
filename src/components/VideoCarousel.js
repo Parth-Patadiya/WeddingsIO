@@ -45,7 +45,7 @@ const VideoCarousel = () => {
   }, [currentIndex, slides.length]);
 
   return (
-    <div className='w-full flex flex-col align-middle justify-center items-center'>
+    <div className='w-full flex flex-col align-middle justify-center items-center' id="AboutUs">
       <Icon className='w-24 h-7 mb-2.5' />
       <h1 className="text-2xl md:text-4xl xl:text-6xl font-semibold mt-3">
         What is weddings.io?
